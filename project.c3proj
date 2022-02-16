@@ -31,25 +31,25 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "wrap",
-			"name": "Wrap",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -85,17 +85,44 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "3ca48n7ggyh",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Browser"
+		],
 		"subfolders": [
 			{
 				"items": [
 					"Enemy1",
 					"Enemy2",
-					"Player"
+					"Player",
+					"Player2"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -103,13 +130,19 @@
 			{
 				"items": [
 					"Rooftop",
-					"TiledBackground"
+					"TiledBackground",
+					"Window"
 				],
 				"subfolders": [],
 				"name": "Background"
 			},
 			{
-				"items": [],
+				"items": [
+					"ShipTurrent",
+					"ShipBullet",
+					"EnemyTurrent",
+					"EnemyBullet"
+				],
 				"subfolders": [],
 				"name": "Weapons"
 			},
@@ -133,6 +166,13 @@
 				],
 				"subfolders": [],
 				"name": "Turrents"
+			},
+			{
+				"items": [
+					"ExitHere"
+				],
+				"subfolders": [],
+				"name": "Tranistion"
 			}
 		]
 	},

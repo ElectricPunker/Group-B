@@ -1,0 +1,120 @@
+{
+	"name": "Player2",
+	"plugin-id": "Sprite",
+	"sid": 304952986383053,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Dying",
+			"type": "boolean",
+			"desc": "Player freezes when shot",
+			"sid": 399385600747673
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 107287493575652
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 624010686899301
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 879774228677352
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 72,
+						"height": 242,
+						"originX": 0.5277777777777778,
+						"originY": 0.4793388429752066,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5110034,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9958677685950413,
+								0,
+								0.9958677685950413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 72,
+						"height": 242,
+						"originX": 0.5277777777777778,
+						"originY": 0.4793388429752066,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2574702,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9958677685950413,
+								0,
+								0.9958677685950413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 242,
+						"height": 72,
+						"originX": 0.4793388429752066,
+						"originY": 0.4722222222222222,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6539923,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0,
+								0.9958677685950413,
+								0,
+								0.9958677685950413,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 352109564577688,
+				"name": "Shot",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 4
+			}
+		],
+		"subfolders": []
+	}
+}

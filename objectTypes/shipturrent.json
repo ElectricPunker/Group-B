@@ -1,14 +1,19 @@
 {
-	"name": "Enemy2",
+	"name": "ShipTurrent",
 	"plugin-id": "Sprite",
-	"sid": 161604529932943,
+	"sid": 946669352392709,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 551333923088048
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 948091537921902
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 707007650771272
 		}
 	],
 	"effectTypes": [],
@@ -19,17 +24,24 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.484,
+						"originY": 0.012,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1456464,
+						"imageSpriteId": 3858114,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Barrel",
+								"x": 0.464,
+								"y": 0.928
+							}
+						],
 						"duration": 1
 					}
 				],
-				"sid": 937527110402362,
+				"sid": 381361060557500,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
