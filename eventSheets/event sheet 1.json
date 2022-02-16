@@ -1,5 +1,216 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Camera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 914266382131279
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 705160788265405,
+							"parameters": {
+								"scale": "1.5"
+							}
+						}
+					],
+					"sid": 177373136209783
+				}
+			],
+			"sid": 246441870017436
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Player",
+							"sid": 729739138202190
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 411380625852448,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 609757117302557
+						}
+					],
+					"sid": 419649191164354
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 541193689547492,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 487425539502493,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 279118636264821
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 631064862356775,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 573773138790574,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 431091223853507
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 953225564355813,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 227072951344264,
+							"parameters": {
+								"animation": "\"RunningRight\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 551425957086501
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 953363750324375,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 391033254705581,
+							"parameters": {
+								"animation": "\"RunningLeft\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 553145184674757
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 460882979439344,
+							"parameters": {
+								"key": 38
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player",
+							"sid": 573142063666742,
+							"parameters": {
+								"animation": "\"Jump\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 668654650866108
+				}
+			],
+			"sid": 786014612993162
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 959087820267938
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Level",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 185012198430169
+		}
+	],
 	"sid": 787825034124574
 }

@@ -1,19 +1,14 @@
 {
-	"name": "Enemy2",
+	"name": "Rooftop",
 	"plugin-id": "Sprite",
-	"sid": 161604529932943,
+	"sid": 744575657202904,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "wrap",
-			"name": "Wrap",
-			"sid": 471465007411878
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 698691523784413
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 168937382918628
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7701146,
+						"imageSpriteId": 5321302,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 937527110402362,
+				"sid": 703298723957404,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

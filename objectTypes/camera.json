@@ -1,21 +1,10 @@
 {
-	"name": "Enemy2",
+	"name": "Camera",
 	"plugin-id": "Sprite",
-	"sid": 161604529932943,
+	"sid": 327726035828687,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "wrap",
-			"name": "Wrap",
-			"sid": 471465007411878
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 698691523784413
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7701146,
+						"imageSpriteId": 5159687,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 937527110402362,
+				"sid": 739814699775866,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
