@@ -329,8 +329,57 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "ShipTurrent",
+							"sid": 230528131808525,
+							"parameters": {
+								"x": "Player.X",
+								"y": "Player.Y"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "ShipTurrent",
+							"sid": 257625524685119,
+							"parameters": {
+								"object": "ShipBullet",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						}
+					],
 					"sid": 315668868581201
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 916743461037441
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "ShipTurrent",
+							"sid": 709971627072272,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Enemy2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 728860093005961
 				}
 			],
 			"sid": 959087820267938
