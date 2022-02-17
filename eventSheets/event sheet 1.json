@@ -220,6 +220,32 @@
 								}
 							],
 							"sid": 376558963099879
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "Player",
+									"sid": 394336121057098
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 579415868231969,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 576797763474610
+								}
+							],
+							"sid": 255740953241851
 						}
 					],
 					"sid": 777231088406821
@@ -319,44 +345,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "has-los-to-object",
-							"objectClass": "Enemy2",
-							"sid": 261572767565007,
-							"behaviorType": "LineOfSight",
-							"parameters": {
-								"object": "Player",
-								"image-point": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle-toward-position",
-							"objectClass": "ShipTurrent",
-							"sid": 230528131808525,
-							"parameters": {
-								"x": "Player.X",
-								"y": "Player.Y"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "ShipTurrent",
-							"sid": 257625524685119,
-							"parameters": {
-								"object": "ShipBullet",
-								"layer": "0",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 315668868581201
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 916743461037441
@@ -369,7 +357,7 @@
 							"sid": 709971627072272,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Enemy2",
+								"pin-to": "Ship",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -377,9 +365,43 @@
 								"height-type": "no",
 								"z": false
 							}
+						},
+						{
+							"id": "add-object-to-target",
+							"objectClass": "ShipTurrent",
+							"sid": 671071677936019,
+							"behaviorType": "Turret",
+							"parameters": {
+								"target": "Player"
+							}
 						}
 					],
 					"sid": 728860093005961
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-shoot",
+							"objectClass": "ShipTurrent",
+							"sid": 662297552368465,
+							"behaviorType": "Turret"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "ShipTurrent",
+							"sid": 599266178139274,
+							"parameters": {
+								"object": "ShipBullet",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 680629398408766
 				}
 			],
 			"sid": 959087820267938

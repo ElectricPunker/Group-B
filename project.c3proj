@@ -109,6 +109,14 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "3ca48n7ggyh",
@@ -120,9 +128,8 @@
 			{
 				"items": [
 					"Enemy1",
-					"Enemy2",
-					"Player",
-					"Player2"
+					"Ship",
+					"Player"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -131,7 +138,9 @@
 				"items": [
 					"Rooftop",
 					"TiledBackground",
-					"Window"
+					"Window",
+					"Sky",
+					"Window2"
 				],
 				"subfolders": [],
 				"name": "Background"
@@ -173,6 +182,13 @@
 				],
 				"subfolders": [],
 				"name": "Tranistion"
+			},
+			{
+				"items": [
+					"Fire"
+				],
+				"subfolders": [],
+				"name": "Effects"
 			}
 		]
 	},

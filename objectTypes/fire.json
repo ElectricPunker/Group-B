@@ -1,17 +1,16 @@
 {
-	"name": "Enemy1",
+	"name": "Fire",
 	"plugin-id": "Sprite",
-	"sid": 709414872937684,
+	"sid": 147918227772538,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
+	"behaviorTypes": [],
+	"effectTypes": [
 		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 294330335132522
+			"effectId": "waterbg",
+			"name": "WaterBackground"
 		}
 	],
-	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -24,12 +23,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3753856,
+						"imageSpriteId": 1493063,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 638129720042661,
+				"sid": 536977532047709,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

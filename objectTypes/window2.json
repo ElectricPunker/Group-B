@@ -1,16 +1,10 @@
 {
-	"name": "Enemy1",
+	"name": "Window2",
 	"plugin-id": "Sprite",
-	"sid": 709414872937684,
+	"sid": 854390252683485,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 294330335132522
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3753856,
+						"imageSpriteId": 5206153,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 638129720042661,
+				"sid": 962376252809107,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

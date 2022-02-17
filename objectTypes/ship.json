@@ -1,14 +1,14 @@
 {
-	"name": "Enemy1",
+	"name": "Ship",
 	"plugin-id": "Sprite",
-	"sid": 709414872937684,
+	"sid": 161604529932943,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
-			"sid": 294330335132522
+			"sid": 551333923088048
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3753856,
+						"imageSpriteId": 5986004,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 638129720042661,
+				"sid": 937527110402362,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
