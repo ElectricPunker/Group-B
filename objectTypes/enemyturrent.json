@@ -1,7 +1,7 @@
 {
-	"name": "EnemyTurrent",
+	"name": "Enemyturrent",
 	"plugin-id": "Sprite",
-	"sid": 696795360152539,
+	"sid": 562319069785853,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 240,
+						"height": 98,
+						"originX": 0.475,
+						"originY": -0.2857142857142857,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5436766,
+						"imageSpriteId": 8098191,
+						"collisionPoly": {
+							"points": [
+								0.9958333333333333,
+								0.9897959183673469,
+								0,
+								0.9897959183673469,
+								0,
+								0,
+								0.9958333333333333,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 519216166137857,
+				"sid": 299127196563885,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -129,7 +129,8 @@
 				"items": [
 					"Enemy1",
 					"Ship",
-					"Player"
+					"Player",
+					"Player2"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -149,7 +150,6 @@
 				"items": [
 					"ShipTurrent",
 					"ShipBullet",
-					"EnemyTurrent",
 					"EnemyBullet"
 				],
 				"subfolders": [],
@@ -171,7 +171,7 @@
 			},
 			{
 				"items": [
-					"Playerturrent"
+					"Enemyturrent"
 				],
 				"subfolders": [],
 				"name": "Turrents"
