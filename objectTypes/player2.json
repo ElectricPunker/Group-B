@@ -41,7 +41,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4177986,
+						"imageSpriteId": 670994,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -53,7 +53,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5512007,
+						"imageSpriteId": 58355,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -65,7 +65,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2357390,
+						"imageSpriteId": 7489433,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -77,7 +77,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5098133,
+						"imageSpriteId": 8273127,
 						"useCollisionPoly": true,
 						"duration": 1
 					},
@@ -89,7 +89,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3795096,
+						"imageSpriteId": 4729672,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -163,13 +163,13 @@
 						"imageSpriteId": 9517482,
 						"collisionPoly": {
 							"points": [
-								0.26,
+								0.3458536883098331,
 								0,
-								0.7920001220703123,
+								0.6339513713557539,
 								0,
-								0.8039999389648436,
+								0.5737559769793247,
 								1,
-								0.2520001220703124,
+								0.41590259086795045,
 								1
 							]
 						},
@@ -187,13 +187,13 @@
 						"imageSpriteId": 3281361,
 						"collisionPoly": {
 							"points": [
-								0.26,
+								0.3458536883098331,
 								0,
-								0.7920001220703123,
+								0.6339513713557539,
 								0,
-								0.8039999389648436,
+								0.5737559769793247,
 								1,
-								0.2520001220703124,
+								0.41590259086795045,
 								1
 							]
 						},
@@ -283,13 +283,13 @@
 						"imageSpriteId": 5740480,
 						"collisionPoly": {
 							"points": [
-								0.26,
+								0.33999997022675366,
 								0,
-								0.7920001220703123,
+								0.6339513713557539,
 								0,
-								0.8039999389648436,
+								0.5659510691572965,
 								1,
-								0.2520001220703124,
+								0.41785378060689843,
 								1
 							]
 						},
@@ -366,13 +366,13 @@
 						"imageSpriteId": 4947650,
 						"collisionPoly": {
 							"points": [
-								0.7479998779296876,
+								0.5704389320931776,
 								1,
-								0.19600006103515644,
+								0.4340487819764687,
 								1,
-								0.20799987792968766,
+								0.35043881300019164,
 								0,
-								0.74,
+								0.6385366449123473,
 								0
 							]
 						},
@@ -390,13 +390,13 @@
 						"imageSpriteId": 2252091,
 						"collisionPoly": {
 							"points": [
-								0.7479998779296876,
+								0.5704389320931776,
 								1,
-								0.19600006103515644,
+								0.4340487819764687,
 								1,
-								0.20799987792968766,
+								0.35043881300019164,
 								0,
-								0.74,
+								0.6385366449123473,
 								0
 							]
 						},
@@ -625,6 +625,79 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 4
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6494079,
+						"collisionPoly": {
+							"points": [
+								0.34195130883193653,
+								0,
+								0.6280976532726747,
+								0,
+								0.5561949715963207,
+								1,
+								0.42760987816787455,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Barrel",
+								"x": 0.8,
+								"y": 0.3
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8971899,
+						"collisionPoly": {
+							"points": [
+								0.34195130883193653,
+								0,
+								0.6280976532726747,
+								0,
+								0.5561949715963207,
+								1,
+								0.42760987816787455,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Barrel",
+								"x": 0.8,
+								"y": 0.3
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 358513479783200,
+				"name": "Shooting",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 11
 			}
 		],
 		"subfolders": []

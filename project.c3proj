@@ -150,7 +150,8 @@
 				"items": [
 					"ShipTurrent",
 					"ShipBullet",
-					"EnemyBullet"
+					"EnemyBullet",
+					"PlayerBullet"
 				],
 				"subfolders": [],
 				"name": "Weapons"

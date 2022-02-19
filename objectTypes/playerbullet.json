@@ -1,47 +1,29 @@
 {
-	"name": "Enemy1",
+	"name": "PlayerBullet",
 	"plugin-id": "Sprite",
-	"sid": 709414872937684,
+	"sid": 800447576635045,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 294330335132522
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 64,
-						"height": 217,
-						"originX": 0.4375,
-						"originY": 0.5253456221198156,
+						"width": 159,
+						"height": 55,
+						"originX": 0.5408805031446541,
+						"originY": 0.7090909090909091,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8505814,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 5531069,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 638129720042661,
+				"sid": 606059988339977,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
