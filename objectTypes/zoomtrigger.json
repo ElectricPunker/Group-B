@@ -1,35 +1,29 @@
 {
-	"name": "PlayerBullet",
+	"name": "Zoomtrigger",
 	"plugin-id": "Sprite",
-	"sid": 800447576635045,
+	"sid": 936102841999732,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 718432476244541
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 159,
-						"height": 55,
-						"originX": 0.5408805031446541,
-						"originY": 0.7090909090909091,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5531069,
+						"imageSpriteId": 8221120,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 606059988339977,
+				"sid": 600523984652553,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

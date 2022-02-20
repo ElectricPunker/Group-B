@@ -80,6 +80,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -98,14 +114,6 @@
 			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Bullet",
-			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -130,7 +138,8 @@
 					"Enemy1",
 					"Ship",
 					"Player",
-					"Player2"
+					"Player2",
+					"Ship2"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -148,7 +157,6 @@
 			},
 			{
 				"items": [
-					"ShipTurrent",
 					"ShipBullet",
 					"EnemyBullet",
 					"PlayerBullet"
@@ -165,14 +173,17 @@
 			},
 			{
 				"items": [
-					"Camera"
+					"Camera",
+					"Zoomtrigger"
 				],
 				"subfolders": [],
 				"name": "Camera"
 			},
 			{
 				"items": [
-					"Enemyturrent"
+					"Enemyturrent",
+					"ShipTurrent",
+					"ShipTurrent2"
 				],
 				"subfolders": [],
 				"name": "Turrents"

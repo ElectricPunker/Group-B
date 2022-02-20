@@ -1,19 +1,24 @@
 {
-	"name": "Enemyturrent",
+	"name": "ShipTurrent2",
 	"plugin-id": "Sprite",
-	"sid": 562319069785853,
+	"sid": 596343312713019,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Turret",
 			"name": "Turret",
-			"sid": 993739402499198
+			"sid": 975855252574920
 		},
 		{
 			"behaviorId": "Pin",
 			"name": "Pin",
-			"sid": 622007189014266
+			"sid": 487020961314303
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 576670984415259
 		}
 	],
 	"effectTypes": [],
@@ -22,38 +27,38 @@
 			{
 				"frames": [
 					{
-						"width": 240,
-						"height": 98,
-						"originX": 0.9875,
-						"originY": 0.7142857142857143,
+						"width": 250,
+						"height": 250,
+						"originX": 0.136,
+						"originY": 0.528,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1612901,
+						"imageSpriteId": 3048594,
 						"collisionPoly": {
 							"points": [
-								0.9958333333333333,
-								0.9897959183673469,
 								0,
-								0.9897959183673469,
+								1,
 								0,
 								0,
-								0.9958333333333333,
-								0
+								1,
+								0,
+								1,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "Barrel",
-								"x": -0.03333333333333333,
-								"y": 0.19387755102040816
+								"x": 1.2,
+								"y": 0.5
 							}
 						],
 						"duration": 1
 					}
 				],
-				"sid": 299127196563885,
+				"sid": 631395810902223,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
