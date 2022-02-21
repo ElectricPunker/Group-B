@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 936102841999732,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Zoom_ID",
+			"type": "number",
+			"desc": "",
+			"sid": 681202680940948
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
