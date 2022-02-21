@@ -737,7 +737,7 @@
 								"rotate": true,
 								"rotate-speed": 360,
 								"target-mode": "first-in-range",
-								"predictive-aim": true,
+								"predictive-aim": false,
 								"projectile-speed": 500,
 								"use-collision-cells": true,
 								"enabled": true
