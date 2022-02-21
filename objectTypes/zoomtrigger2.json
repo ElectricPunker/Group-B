@@ -1,22 +1,18 @@
 {
-	"name": "Fire",
+	"name": "Zoomtrigger2",
 	"plugin-id": "Sprite",
-	"sid": 147918227772538,
+	"sid": 665898019735931,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [
+	"instanceVariables": [
 		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 871157011288735
+			"name": "Zoom_ID",
+			"type": "number",
+			"desc": "",
+			"sid": 712760500512472
 		}
 	],
-	"effectTypes": [
-		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
-		}
-	],
+	"behaviorTypes": [],
+	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
@@ -29,12 +25,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1493063,
+						"imageSpriteId": 7067566,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 536977532047709,
+				"sid": 105050761301163,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

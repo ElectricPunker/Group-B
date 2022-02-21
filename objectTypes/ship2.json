@@ -48,6 +48,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Fire",
+								"x": -0.168,
+								"y": 0.776
+							}
+						],
 						"duration": 1
 					}
 				],
