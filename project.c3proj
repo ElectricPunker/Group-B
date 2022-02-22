@@ -206,6 +206,13 @@
 				],
 				"subfolders": [],
 				"name": "Effects"
+			},
+			{
+				"items": [
+					"Controlstext"
+				],
+				"subfolders": [],
+				"name": "Instructions"
 			}
 		]
 	},
