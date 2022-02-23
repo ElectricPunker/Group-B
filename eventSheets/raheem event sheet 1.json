@@ -482,6 +482,17 @@
 								"image-point": "1",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 233982447030782,
+							"parameters": {
+								"audio-file": "Cannon Sound Effect (128 kbps)",
+								"loop": "not-looping",
+								"volume": "-25",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 680629398408766
