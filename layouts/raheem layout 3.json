@@ -98,7 +98,7 @@
 					},
 					"uid": 35,
 					"instanceVariables": {
-						"Zoom_ID": 1.1
+						"Zoom_ID": 0.6
 					},
 					"behaviors": {},
 					"world": {
@@ -506,9 +506,9 @@
 					"behaviors": {
 						"Platform": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 330,
-								"deceleration": 1000,
+								"max-speed": 425,
+								"acceleration": 450,
+								"deceleration": 2000,
 								"jump-strength": 450,
 								"gravity": 1500,
 								"max-fall-speed": 1000,
@@ -909,9 +909,9 @@
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							0.4392156862745098,
+							1,
+							0.9333333333333333,
 							1
 						],
 						"horizontal-alignment": "left",

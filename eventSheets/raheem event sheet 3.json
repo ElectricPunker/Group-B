@@ -1189,11 +1189,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Zoomtrigger",
-									"sid": 359924869798550,
+									"sid": 532503290279433,
 									"parameters": {
 										"instance-variable": "Zoom_ID",
 										"comparison": 0,
-										"value": "1.1"
+										"value": "0.6"
 									}
 								}
 							],
@@ -1201,9 +1201,9 @@
 								{
 									"id": "set-layout-scale",
 									"objectClass": "System",
-									"sid": 430386650105137,
+									"sid": 949471521310643,
 									"parameters": {
-										"scale": "lerp(LayoutScale,1.1,4* dt)"
+										"scale": "lerp(LayoutScale,0.6,4* dt)"
 									}
 								}
 							],
