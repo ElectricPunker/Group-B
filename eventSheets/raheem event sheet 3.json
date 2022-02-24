@@ -172,17 +172,6 @@
 										"image-point": "1",
 										"create-hierarchy": false
 									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 574058231543587,
-									"parameters": {
-										"audio-file": "Realistic Gunshot Sound Effect (128 kbps)",
-										"loop": "not-looping",
-										"volume": "-20",
-										"tag-optional": "\"\""
-									}
 								}
 							],
 							"sid": 161480938170066
@@ -587,17 +576,6 @@
 								"x": "Player2.x",
 								"y": "Player2.y"
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 542403406606658,
-							"parameters": {
-								"audio-file": "Laser Shot Sound Effect",
-								"loop": "not-looping",
-								"volume": "-30",
-								"tag-optional": "\"\""
-							}
 						}
 					],
 					"sid": 194945833365132
@@ -644,17 +622,6 @@
 								"x": "Player2.x",
 								"y": "Player2.y"
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 868892592073257,
-							"parameters": {
-								"audio-file": "Laser Shot Sound Effect",
-								"loop": "not-looping",
-								"volume": "-30",
-								"tag-optional": "\"\""
-							}
 						}
 					],
 					"sid": 597370333281807
@@ -700,17 +667,6 @@
 							"parameters": {
 								"x": "Player2.x",
 								"y": "Player2.y"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 176432636813707,
-							"parameters": {
-								"audio-file": "Laser Shot Sound Effect",
-								"loop": "not-looping",
-								"volume": "-30",
-								"tag-optional": "\"\""
 							}
 						}
 					],

@@ -482,17 +482,6 @@
 								"image-point": "1",
 								"create-hierarchy": false
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 233982447030782,
-							"parameters": {
-								"audio-file": "Cannon Sound Effect (128 kbps)",
-								"loop": "not-looping",
-								"volume": "-25",
-								"tag-optional": "\"\""
-							}
 						}
 					],
 					"sid": 680629398408766
@@ -523,9 +512,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 625683026973206,
+							"sid": 365331721368793,
 							"parameters": {
-								"layout": "Manny Layout 2"
+								"layout": "Raheem Layout 3"
 							}
 						}
 					],
