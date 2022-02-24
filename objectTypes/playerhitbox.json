@@ -1,10 +1,16 @@
 {
-	"name": "Window2",
+	"name": "PlayerHitBox",
 	"plugin-id": "Sprite",
-	"sid": 854390252683485,
+	"sid": 100228588433004,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 110898507144844
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6356202,
+						"imageSpriteId": 441701,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 962376252809107,
+				"sid": 104280924979015,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -47,6 +47,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
@@ -96,6 +104,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -106,14 +122,6 @@
 			"type": "behavior",
 			"id": "Turret",
 			"name": "Turret",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -130,7 +138,8 @@
 	"uniqueId": "3ca48n7ggyh",
 	"objectTypes": {
 		"items": [
-			"Browser"
+			"Browser",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -141,7 +150,8 @@
 					"Player2",
 					"Ship2",
 					"Enemy2",
-					"Enemy3"
+					"Enemy3",
+					"PlayerHitBox"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -248,7 +258,23 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "cannon sound effect (128 kbps).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 765524626023640
+				},
+				{
+					"name": "laser shot sound effect.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 457319626526703
+				},
+				{
+					"name": "realistic gunshot sound effect (128 kbps).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 953151729976422
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

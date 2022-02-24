@@ -206,8 +206,8 @@
 							"conditions": [
 								{
 									"id": "is-overlapping-another-object",
-									"objectClass": "Player2",
-									"sid": 151824101225988,
+									"objectClass": "PlayerHitBox",
+									"sid": 114594087593133,
 									"parameters": {
 										"object": "ShipBullet"
 									}
@@ -231,8 +231,8 @@
 							"conditions": [
 								{
 									"id": "is-overlapping-another-object",
-									"objectClass": "Player2",
-									"sid": 899950638973836,
+									"objectClass": "PlayerHitBox",
+									"sid": 415029887489290,
 									"parameters": {
 										"object": "EnemyBullet"
 									}
@@ -385,6 +385,39 @@
 						}
 					],
 					"sid": 773296384358301
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 475159514649006
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 402959538392503
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "PlayerHitBox",
+							"sid": 313276465063233,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 945914073017160
 				}
 			],
 			"sid": 875769055221196
@@ -965,6 +998,78 @@
 						}
 					],
 					"sid": 870275283849224
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "EnemyBullet",
+							"sid": 987050904145793
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 341827999740076,
+							"parameters": {
+								"audio-file": "laser shot sound effect",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 232269861674901
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "ShipBullet",
+							"sid": 779494982401028
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 479110486475541,
+							"parameters": {
+								"audio-file": "cannon sound effect (128 kbps)",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 228718117708087
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "PlayerBullet",
+							"sid": 123409146912795
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 373521433828140,
+							"parameters": {
+								"audio-file": "realistic gunshot sound effect (128 kbps)",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 335912635635933
 				}
 			],
 			"sid": 187521475189531
@@ -992,9 +1097,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 108738019224037,
+							"sid": 460486108370660,
 							"parameters": {
-								"layout": "Manny Layout 4"
+								"layout": "Layout 1"
 							}
 						}
 					],
