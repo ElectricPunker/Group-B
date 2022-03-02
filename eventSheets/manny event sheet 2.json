@@ -310,33 +310,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 895542979586814,
-					"parameters": {
-						"interval-seconds": "1.5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Enemy4",
-					"sid": 920795937588284,
-					"parameters": {
-						"object": "Enemybullet2",
-						"layer": "0",
-						"image-point": "0",
-						"create-hierarchy": false
-					}
-				}
-			],
-			"sid": 943761897811012
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-created",
 					"objectClass": "Enemybullet2",
 					"sid": 477542227314354
@@ -356,6 +329,30 @@
 				}
 			],
 			"sid": 605199412856264
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Playerbullet2",
+					"sid": 180861202104035
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 225626507661247,
+					"parameters": {
+						"audio-file": "realistic gunshot sound effect (128 kbps)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 523590991733976
 		}
 	],
 	"sid": 853118264303988

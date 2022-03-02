@@ -304,7 +304,7 @@
 						"Turret": {
 							"properties": {
 								"range": 300,
-								"rate-of-fire": 5,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 180,
 								"target-mode": "nearest",
@@ -347,7 +347,7 @@
 						"Turret": {
 							"properties": {
 								"range": 500,
-								"rate-of-fire": 1,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 360,
 								"target-mode": "nearest",
@@ -604,7 +604,7 @@
 						"Turret": {
 							"properties": {
 								"range": 300,
-								"rate-of-fire": 5,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 180,
 								"target-mode": "nearest",
@@ -647,7 +647,7 @@
 						"Turret": {
 							"properties": {
 								"range": 300,
-								"rate-of-fire": 5,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 180,
 								"target-mode": "nearest",
@@ -690,7 +690,7 @@
 						"Turret": {
 							"properties": {
 								"range": 300,
-								"rate-of-fire": 5,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 180,
 								"target-mode": "nearest",
@@ -733,7 +733,7 @@
 						"Turret": {
 							"properties": {
 								"range": 300,
-								"rate-of-fire": 5,
+								"rate-of-fire": 1.5,
 								"rotate": true,
 								"rotate-speed": 180,
 								"target-mode": "nearest",
@@ -979,6 +979,53 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Controlstext",
+					"properties": {
+						"text": "Use the arrow keys to move! Aim with your mouse and click it to fire!\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.8352941176470589,
+							0.33725490196078434,
+							0.9019607843137255,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 103,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
+					"world": {
+						"x": 795,
+						"y": 256,
+						"width": 418.44275675152267,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

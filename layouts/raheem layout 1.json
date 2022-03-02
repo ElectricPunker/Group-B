@@ -798,7 +798,7 @@
 				{
 					"type": "Controlstext",
 					"properties": {
-						"text": "Use the arrow keys to move!\n",
+						"text": "Use the arrow keys to move!\nPress up twice to double jump!",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 20,
@@ -827,9 +827,9 @@
 					},
 					"world": {
 						"x": 10,
-						"y": 65,
+						"y": 4.8185114244855,
 						"width": 309,
-						"height": 68,
+						"height": 128.1814885755145,
 						"originX": 0,
 						"originY": 0,
 						"color": [

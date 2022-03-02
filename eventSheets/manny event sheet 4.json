@@ -335,6 +335,27 @@
 				}
 			],
 			"sid": 375750312846750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 769557973685575
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 355888937825535,
+					"parameters": {
+						"scale": "1.5"
+					}
+				}
+			],
+			"sid": 353278477783131
 		}
 	],
 	"sid": 533679549862682

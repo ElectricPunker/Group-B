@@ -1097,9 +1097,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 460486108370660,
+							"sid": 338098763147777,
 							"parameters": {
-								"layout": "Game Over"
+								"layout": "Manny Layout 4"
 							}
 						}
 					],

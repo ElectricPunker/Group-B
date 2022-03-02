@@ -712,6 +712,53 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Controlstext",
+					"properties": {
+						"text": "Grab the key to unlock the door!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.8352941176470589,
+							0.33725490196078434,
+							0.9019607843137255,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 104,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
+					"world": {
+						"x": 714,
+						"y": 342,
+						"width": 418.44275675152267,
+						"height": 36,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 297811183783498,
