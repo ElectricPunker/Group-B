@@ -71,6 +71,35 @@
 					}
 				},
 				{
+					"type": "Pointer",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1870.2353528361432,
+						"y": 379.65977227595226,
+						"width": 153,
+						"height": 153,
+						"originX": 0.38562091503267976,
+						"originY": 0.45751633986928103,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Fire",
 					"properties": {
 						"initially-visible": true,

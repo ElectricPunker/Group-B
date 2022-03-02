@@ -179,7 +179,8 @@
 			"door",
 			"Enemybullet2",
 			"key",
-			"Playerbullet2"
+			"Playerbullet2",
+			"Pointer"
 		],
 		"subfolders": [
 			{
