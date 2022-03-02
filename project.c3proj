@@ -322,7 +322,18 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "FREE_The_Weeknd_x_Synthwave_80s_Type_Beat_-_SPEEDWAY_128_kbps.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 685255626274024
+				},
+				{
+					"name": "strong_wind_sound_effect_128_kbps.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 571958872950970
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

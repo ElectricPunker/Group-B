@@ -1234,6 +1234,87 @@
 				}
 			],
 			"sid": 924146205399595
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Audio2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 911011136823093
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 828308190258884,
+							"parameters": {
+								"audio-file": "strong_wind_sound_effect_128_kbps",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 420503958354939,
+							"parameters": {
+								"audio-file": "FREE_The_Weeknd_x_Synthwave_80s_Type_Beat_-_SPEEDWAY_128_kbps",
+								"loop": "not-looping",
+								"volume": "-10",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 910824954204316
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Player2",
+							"sid": 763597220711409
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player2",
+							"sid": 144899400681869,
+							"parameters": {
+								"animation": "\"Shot\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 785464092752423
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet",
+							"sid": 248164855344045
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EnemyBullet",
+							"sid": 973012583506379
+						}
+					],
+					"sid": 675753092313908
+				}
+			],
+			"sid": 300559229485084
 		}
 	],
 	"sid": 390431601616824

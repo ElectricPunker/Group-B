@@ -356,6 +356,27 @@
 				}
 			],
 			"sid": 353278477783131
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 261063109478106
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 530436047206100,
+					"parameters": {
+						"tag": "\"strong_wind_soundeffect_128_kbps.webm\""
+					}
+				}
+			],
+			"sid": 784982339894255
 		}
 	],
 	"sid": 533679549862682

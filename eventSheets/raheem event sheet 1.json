@@ -600,6 +600,71 @@
 				}
 			],
 			"sid": 185012198430169
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Audio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 580610246643494
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 935106016792227,
+							"parameters": {
+								"audio-file": "FREE_The_Weeknd_x_Synthwave_80s_Type_Beat_-_SPEEDWAY_128_kbps",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 447129485580045
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Player1",
+							"sid": 462647308013213
+						},
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player1",
+							"sid": 937182824994687,
+							"parameters": {
+								"animation": "\"Shot\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 875891348585099
+						},
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet",
+							"sid": 823434681281646
+						}
+					],
+					"sid": 932903915665446
+				}
+			],
+			"sid": 177130869081223
 		}
 	],
 	"sid": 787825034124574
