@@ -1,14 +1,14 @@
 {
-	"name": "player",
+	"name": "Playerbullet2",
 	"plugin-id": "Sprite",
-	"sid": 796264566085594,
+	"sid": 766017683841397,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 523954766811044
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 255486588198523
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6048623,
+						"imageSpriteId": 9843623,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 714222935027780,
+				"sid": 468152088308281,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

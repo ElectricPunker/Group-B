@@ -1,14 +1,14 @@
 {
-	"name": "player",
+	"name": "Walls",
 	"plugin-id": "Sprite",
-	"sid": 796264566085594,
+	"sid": 161265580963189,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 523954766811044
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 355233665142876
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6048623,
+						"imageSpriteId": 4736702,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 714222935027780,
+				"sid": 450092661324087,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

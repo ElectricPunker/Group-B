@@ -1015,6 +1015,11 @@
 					"uid": 51,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
 					"world": {
 						"x": 93,
 						"y": 121,
@@ -1071,6 +1076,7 @@
 			"sid": 936151759429576,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,

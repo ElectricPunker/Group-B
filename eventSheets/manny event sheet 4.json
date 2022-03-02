@@ -1,5 +1,341 @@
 {
 	"name": "Manny Event sheet 4",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 195039396147298
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "armCannon",
+					"sid": 334327541226795,
+					"parameters": {
+						"x": "player.ImagePointX(\"armCannon\")",
+						"y": "player.ImagePointY(\"armCannon\")"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "player",
+					"sid": 973100182541335,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 658694366495834
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 517811632272172,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 301383407655397,
+					"parameters": {
+						"object-to-create": "Playerbullet2",
+						"layer": "0",
+						"x": "armCannon.ImagePointX(\"armCannon\")",
+						"y": "armCannon.ImagePointY(\"armCannon\")",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 281050478959880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Playerbullet2",
+					"sid": 381727001482895
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Playerbullet2",
+					"sid": 387530289013639,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 317675640557641
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Playerbullet2",
+					"sid": 324464519313862,
+					"parameters": {
+						"object": "Enemy4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy4",
+					"sid": 867501437767428
+				}
+			],
+			"sid": 239904014647117
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy4",
+					"sid": 176497210906015,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 617872513584798
+				}
+			],
+			"sid": 544675274046882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 932344985450737
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Enemy4",
+					"sid": 741762257887309,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "player"
+					}
+				}
+			],
+			"sid": 696795661634162
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Enemy4",
+					"sid": 704484788962661,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Enemy4",
+					"sid": 914888760017935,
+					"parameters": {
+						"object": "Enemybullet2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 417207469344196
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemybullet2",
+					"sid": 898190772451847,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 434738732143001
+				}
+			],
+			"sid": 289434701913364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Playerbullet2",
+					"sid": 140889699423150,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Playerbullet2",
+					"sid": 581898704168942
+				}
+			],
+			"sid": 153250331580268
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemybullet2",
+					"sid": 859320671236887,
+					"parameters": {
+						"object": "Walls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemybullet2",
+					"sid": 861648519242971
+				}
+			],
+			"sid": 801813453037410
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 722179223547152,
+					"parameters": {
+						"object": "key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "door",
+					"sid": 991133338515287,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "key",
+					"sid": 743322815911168
+				}
+			],
+			"sid": 450887663837923
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 286411502243509,
+					"parameters": {
+						"object": "door"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 341202475994420,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 338488556042767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Enemybullet2",
+					"sid": 310304105479953
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 991420946096634,
+					"parameters": {
+						"audio-file": "laser shot sound effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 841271154648953
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Playerbullet2",
+					"sid": 417481993740240
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 194963901948710,
+					"parameters": {
+						"audio-file": "realistic gunshot sound effect (128 kbps)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 375750312846750
+		}
+	],
 	"sid": 533679549862682
 }

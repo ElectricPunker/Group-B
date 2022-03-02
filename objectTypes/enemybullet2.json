@@ -1,14 +1,14 @@
 {
-	"name": "player",
+	"name": "Enemybullet2",
 	"plugin-id": "Sprite",
-	"sid": 796264566085594,
+	"sid": 488684353931326,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 523954766811044
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 311284703300133
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6048623,
+						"imageSpriteId": 490139,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 714222935027780,
+				"sid": 496343338776029,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

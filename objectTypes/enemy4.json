@@ -1,14 +1,14 @@
 {
-	"name": "player",
+	"name": "Enemy4",
 	"plugin-id": "Sprite",
-	"sid": 796264566085594,
+	"sid": 536303120117444,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 523954766811044
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 133153213879088
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6048623,
+						"imageSpriteId": 6987986,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 714222935027780,
+				"sid": 547937018303653,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

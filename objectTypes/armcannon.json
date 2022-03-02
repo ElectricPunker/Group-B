@@ -1,16 +1,10 @@
 {
-	"name": "player",
+	"name": "armCannon",
 	"plugin-id": "Sprite",
-	"sid": 796264566085594,
+	"sid": 400768661375107,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 523954766811044
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -24,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6048623,
+						"imageSpriteId": 1940666,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 714222935027780,
+				"sid": 334474828597687,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

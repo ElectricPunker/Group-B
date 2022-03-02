@@ -1,5 +1,5 @@
 {
-	"name": "Layout 1",
+	"name": "Game Over",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,19 +7,61 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Sky2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 98,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"WarpRipple": {
+							"parameters": {
+								"frequency": 3,
+								"amplitude": 0.03,
+								"speed": -2
+							}
+						}
+					},
+					"world": {
+						"x": -446,
+						"y": -275,
+						"width": 3032,
+						"height": 2137,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Controlstext",
 					"properties": {
-						"text": "End of prototype. Press \"R\" to restart.",
+						"text": "           YOU ESCAPED! \n      PRESS \"R\" PLAY AGAIN!",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
+						"font": "Snap ITC",
+						"size": 100,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
-							0.9607843137254902,
-							0.9607843137254902,
-							0.9607843137254902,
+							0.5058823529411764,
+							0.996078431372549,
+							0.44313725490196076,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -28,14 +70,19 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 52,
+					"uid": 97,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
 					"world": {
-						"x": 570,
-						"y": 348,
-						"width": 1240,
-						"height": 202,
+						"x": -317,
+						"y": 562,
+						"width": 2450,
+						"height": 792,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -52,6 +99,7 @@
 			"sid": 851528944888521,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,
@@ -86,5 +134,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "Game Over Event sheet 1"
 }

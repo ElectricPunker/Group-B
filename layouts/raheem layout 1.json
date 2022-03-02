@@ -479,7 +479,7 @@
 					}
 				},
 				{
-					"type": "Player",
+					"type": "Player1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -820,6 +820,11 @@
 					"uid": 50,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
 					"world": {
 						"x": 10,
 						"y": 65,
@@ -876,6 +881,7 @@
 			"sid": 494357419194575,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
 			"color": [
 				1,
 				1,

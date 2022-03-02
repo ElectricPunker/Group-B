@@ -30,7 +30,7 @@
 					"actions": [
 						{
 							"id": "set-enabled",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 589570135267580,
 							"behaviorType": "ScrollTo",
 							"parameters": {
@@ -53,7 +53,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 753427522424206,
 							"parameters": {
 								"object": "Zoomtrigger2"
@@ -144,7 +144,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 890080205649163,
 									"parameters": {
 										"animation": "\"Idle\"",
@@ -169,7 +169,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 597499496249560,
 									"parameters": {
 										"animation": "\"Idle\"",
@@ -194,7 +194,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 355907695229466,
 									"parameters": {
 										"animation": "\"RunningRight\"",
@@ -219,7 +219,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 267563032051713,
 									"parameters": {
 										"animation": "\"RunningLeft\"",
@@ -244,7 +244,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 720228001151372,
 									"parameters": {
 										"animation": "\"Jump\"",
@@ -269,7 +269,7 @@
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 672234064224342,
 									"parameters": {
 										"instance-variable": "Dying",
@@ -294,7 +294,7 @@
 							"actions": [
 								{
 									"id": "set-boolean-instvar",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 722586666923562,
 									"parameters": {
 										"instance-variable": "Dying",
@@ -309,7 +309,7 @@
 							"conditions": [
 								{
 									"id": "on-destroyed",
-									"objectClass": "Player",
+									"objectClass": "Player1",
 									"sid": 394336121057098
 								}
 							],
@@ -338,7 +338,7 @@
 					"conditions": [
 						{
 							"id": "is-animation-playing",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 501297353653039,
 							"parameters": {
 								"animation": "\"Shot\""
@@ -347,7 +347,7 @@
 						},
 						{
 							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 652777998019125,
 							"parameters": {
 								"instance-variable": "Dying"
@@ -357,7 +357,7 @@
 					"actions": [
 						{
 							"id": "set-animation",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 519823430488664,
 							"parameters": {
 								"animation": "\"Shot\"",
@@ -385,7 +385,7 @@
 					"conditions": [
 						{
 							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 289049025582124,
 							"parameters": {
 								"instance-variable": "Dying"
@@ -395,7 +395,7 @@
 					"actions": [
 						{
 							"id": "set-enabled",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 809421824111089,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -435,7 +435,7 @@
 							"sid": 536311107857822,
 							"behaviorType": "Pin",
 							"parameters": {
-								"pin-to": "Player",
+								"pin-to": "Player1",
 								"x": true,
 								"y": true,
 								"angle": true,
@@ -488,7 +488,7 @@
 							"sid": 671071677936019,
 							"behaviorType": "Turret",
 							"parameters": {
-								"target": "Player"
+								"target": "Player1"
 							}
 						}
 					],
@@ -558,7 +558,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Player",
+							"objectClass": "Player1",
 							"sid": 220969879431376,
 							"parameters": {
 								"object": "ExitHere"
@@ -569,9 +569,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 365331721368793,
+							"sid": 988302946463200,
 							"parameters": {
-								"layout": "Raheem Layout 3"
+								"layout": "Manny Layout 2"
 							}
 						}
 					],
