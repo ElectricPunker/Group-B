@@ -1125,6 +1125,56 @@
 						}
 					],
 					"sid": 639100411672554
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 307763911967123,
+							"parameters": {
+								"object": "Zoomtrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Story",
+							"sid": 584172884818841,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 631676940840913
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Story",
+							"sid": 423223639567765
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 285255582761322,
+							"parameters": {
+								"seconds": "7"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Story",
+							"sid": 919819058991635
+						}
+					],
+					"sid": 742605446828367
 				}
 			],
 			"sid": 400435516114898

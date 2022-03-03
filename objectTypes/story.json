@@ -1,0 +1,14 @@
+{
+	"name": "Story",
+	"plugin-id": "Text",
+	"sid": 398928940591558,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "warpripple",
+			"name": "WarpRipple"
+		}
+	]
+}

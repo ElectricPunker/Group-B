@@ -180,7 +180,8 @@
 			"Enemybullet2",
 			"key",
 			"Playerbullet2",
-			"Pointer"
+			"Pointer",
+			"Story"
 		],
 		"subfolders": [
 			{
