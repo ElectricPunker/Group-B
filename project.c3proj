@@ -143,6 +143,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "warpripple",
 			"name": "Warp ripple",
@@ -181,7 +189,9 @@
 			"key",
 			"Playerbullet2",
 			"Pointer",
-			"Story"
+			"Story",
+			"Gametitle",
+			"Transition"
 		],
 		"subfolders": [
 			{
@@ -279,6 +289,7 @@
 	},
 	"layouts": {
 		"items": [
+			"Start",
 			"Raheem Layout 1",
 			"Manny Layout 2",
 			"Raheem Layout 3",
@@ -293,7 +304,8 @@
 			"Raheem Event sheet 3",
 			"Manny Event sheet 4",
 			"Raheem Event sheet 1",
-			"Game Over Event sheet 1"
+			"Game Over Event sheet 1",
+			"Start Event Sheet"
 		],
 		"subfolders": []
 	},
