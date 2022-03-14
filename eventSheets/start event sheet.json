@@ -14,9 +14,27 @@
 				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
-					"sid": 412364406758234,
+					"sid": 307639680295075,
 					"parameters": {
-						"scale": "1.3"
+						"scale": "1.5"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gametitle",
+					"sid": 568041477082229,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "PressSpacebar",
+					"sid": 690046298544847,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "600"
 					}
 				}
 			],
@@ -36,11 +54,25 @@
 			],
 			"actions": [
 				{
+					"id": "start-fade",
+					"objectClass": "Transition",
+					"sid": 253577302333757,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Transition",
+					"sid": 177273458328498,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 867356465349948,
+					"sid": 842340571311930,
 					"parameters": {
-						"seconds": "1.0"
+						"seconds": "4"
 					}
 				}
 			],
@@ -59,22 +91,22 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 960460229102225,
+					"sid": 132116140131414,
 					"parameters": {
 						"object-to-create": "Transition",
 						"layer": "0",
-						"x": "960",
-						"y": "530",
+						"x": "Gametitle.X",
+						"y": "Gametitle.Y",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "set-size",
 					"objectClass": "Transition",
-					"sid": 730035524985150,
+					"sid": 101653127973816,
 					"parameters": {
-						"width": "1925",
-						"height": "1087"
+						"width": "3146",
+						"height": "1713"
 					}
 				},
 				{
@@ -90,9 +122,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-wait-finished",
+					"id": "on-fade-in-finished",
 					"objectClass": "Transition",
-					"sid": 512463523391373,
+					"sid": 266191970567517,
 					"behaviorType": "Fade"
 				}
 			],
@@ -107,6 +139,51 @@
 				}
 			],
 			"sid": 154517411470285
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 691453473008812,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "PressSpacebar",
+					"sid": 845368415382480,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "PressSpacebar",
+					"sid": 212553756986983,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "10"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "PressSpacebar",
+					"sid": 979485090612946,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Subtract\""
+					}
+				}
+			],
+			"sid": 777453382841283
 		}
 	],
 	"sid": 989660775176262

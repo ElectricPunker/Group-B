@@ -21,9 +21,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 512,
+						"x": 383.5,
 						"y": 713,
-						"width": 4283,
+						"width": 4026,
 						"height": 2495,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -587,10 +587,26 @@
 					},
 					"uid": 164,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 2,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
 					"world": {
-						"x": 796,
-						"y": 362,
+						"x": 376,
+						"y": 201,
 						"width": 687,
 						"height": 192,
 						"originX": 0,
@@ -606,9 +622,239 @@
 					}
 				},
 				{
-					"type": "Transition",
+					"type": "PressSpacebar",
+					"properties": {
+						"text": "Press 'SPACEBAR' to start!",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 108,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": false,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 451.4285595342769,
+						"y": 354.28791321491826,
+						"width": 556.343740345056,
+						"height": 150.43079414636412,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.13725490196078433,
+							0.5450980392156862,
+							0.23921568627450981,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Itch",
+					"properties": {
+						"text": "*This game supports fullscreen. If you are playing on itch in fullscreen mode, click on the game screen so the controls may work properly.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 109,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 5,
+						"y": 680,
+						"width": 281,
+						"height": 214,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Fire",
 					"properties": {
 						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"effects": {
+						"WaterBackground": {
+							"parameters": {
+								"speed": 1,
+								"x-speed": 0.5,
+								"y-speed": 0.7,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 1360,
+						"y": 126.5,
+						"width": 231,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Ship",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"instanceVariables": {},
+					"behaviors": {
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "solids",
+								"range": 10000,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						}
+					},
+					"world": {
+						"x": 1081.589441,
+						"y": 79.205302,
+						"width": 478,
+						"height": 176.30465484150986,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ShipTurrent",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 112,
+					"instanceVariables": {},
+					"behaviors": {
+						"Turret": {
+							"properties": {
+								"range": 1000,
+								"rate-of-fire": 0.5,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						},
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 900,
+						"y": 156,
+						"width": 122,
+						"height": 133,
+						"originX": 0.136,
+						"originY": 0.528,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transition",
+					"properties": {
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -623,16 +869,16 @@
 								"wait-time": 0.5,
 								"fade-out-time": 1,
 								"destroy": true,
-								"enabled": true,
+								"enabled": false,
 								"live-preview": false
 							}
 						}
 					},
 					"world": {
-						"x": -597,
-						"y": -120,
-						"width": 250,
-						"height": 250,
+						"x": 1053,
+						"y": 603,
+						"width": 3146,
+						"height": 1713,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

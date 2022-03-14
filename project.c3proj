@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
@@ -136,16 +144,24 @@
 		},
 		{
 			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Fade",
-			"name": "Fade",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -190,8 +206,7 @@
 			"Playerbullet2",
 			"Pointer",
 			"Story",
-			"Gametitle",
-			"Transition"
+			"Gametitle"
 		],
 		"subfolders": [
 			{
@@ -260,21 +275,25 @@
 			},
 			{
 				"items": [
-					"ExitHere"
+					"ExitHere",
+					"Transition"
 				],
 				"subfolders": [],
 				"name": "Tranistion"
 			},
 			{
 				"items": [
-					"Fire"
+					"Fire",
+					"Glass"
 				],
 				"subfolders": [],
 				"name": "Effects"
 			},
 			{
 				"items": [
-					"Controlstext"
+					"Controlstext",
+					"PressSpacebar",
+					"Itch"
 				],
 				"subfolders": [],
 				"name": "Instructions"

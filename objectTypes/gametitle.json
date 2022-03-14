@@ -4,6 +4,17 @@
 	"sid": 502174218688418,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 481823439476220
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 152851924166975
+		}
+	],
 	"effectTypes": []
 }

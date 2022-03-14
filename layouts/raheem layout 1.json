@@ -73,7 +73,7 @@
 				{
 					"type": "Pointer",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -85,10 +85,10 @@
 					"world": {
 						"x": 1870.2353528361432,
 						"y": 379.65977227595226,
-						"width": 153,
-						"height": 153,
-						"originX": 0.38562091503267976,
-						"originY": 0.45751633986928103,
+						"width": 300,
+						"height": 300,
+						"originX": 0.44166666666666665,
+						"originY": 0.47833333333333333,
 						"color": [
 							1,
 							1,
@@ -102,7 +102,7 @@
 				{
 					"type": "Fire",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -152,7 +152,7 @@
 				{
 					"type": "Ship",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -455,7 +455,7 @@
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
 						"wrapping": "word",
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "top-left"
 					},
 					"uid": 9,
@@ -510,7 +510,7 @@
 				{
 					"type": "Player1",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -564,7 +564,7 @@
 				{
 					"type": "ShipTurrent",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -954,6 +954,47 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Glass",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 113,
+					"instanceVariables": {},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 800,
+								"acceleration": 0,
+								"gravity": 1000,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 127.73091764434034,
+						"y": 177.59580411764227,
+						"width": 116,
+						"height": 119.70145292020158,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
