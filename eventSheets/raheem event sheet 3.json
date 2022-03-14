@@ -382,6 +382,24 @@
 							"parameters": {
 								"state": "enabled"
 							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipTurrent2",
+							"sid": 739134272541628,
+							"behaviorType": "Turret",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipBullet",
+							"sid": 395045749757620,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
 						}
 					],
 					"sid": 773296384358301
@@ -429,6 +447,46 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 603116838507454
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Ship2",
+							"sid": 564431486175442,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipBullet",
+							"sid": 300317320001976,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipTurrent2",
+							"sid": 599261700730405,
+							"behaviorType": "Turret",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 750054912442359
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -1284,6 +1342,41 @@
 				}
 			],
 			"sid": 924146205399595
+		},
+		{
+			"eventType": "variable",
+			"name": "Audio",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 698314094649690
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sound",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 763552083735633,
+							"parameters": {
+								"tag": "\"\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 162328801274520
+				}
+			],
+			"sid": 795075284379956
 		}
 	],
 	"sid": 390431601616824
