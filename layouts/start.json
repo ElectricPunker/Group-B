@@ -566,10 +566,10 @@
 				{
 					"type": "Gametitle",
 					"properties": {
-						"text": "GAME TITLE",
+						"text": "Popped: A Run from the Cops",
 						"enable-bbcode": true,
 						"font": "Stencil",
-						"size": 90,
+						"size": 45,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -658,7 +658,7 @@
 					},
 					"world": {
 						"x": 451.4285595342769,
-						"y": 354.28791321491826,
+						"y": 367.28791321491826,
 						"width": 556.343740345056,
 						"height": 150.43079414636412,
 						"originX": 0,
@@ -875,8 +875,8 @@
 						}
 					},
 					"world": {
-						"x": 1053,
-						"y": 603,
+						"x": 1202,
+						"y": 571,
 						"width": 3146,
 						"height": 1713,
 						"originX": 0.5,
