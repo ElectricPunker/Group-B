@@ -40,16 +40,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
+			"id": "Spritefont2",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
+			"id": "Text",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -136,6 +136,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Turret",
 			"name": "Turret",
 			"author": "Scirra",
@@ -146,14 +154,6 @@
 			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Flash",
-			"name": "Flash",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -189,6 +189,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "3ca48n7ggyh",
@@ -206,7 +214,9 @@
 			"Playerbullet2",
 			"Pointer",
 			"Story",
-			"Gametitle"
+			"Gametitle",
+			"light",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -248,7 +258,9 @@
 			{
 				"items": [
 					"Keyboard",
-					"Mouse"
+					"Mouse",
+					"Pause",
+					"PauseMenu"
 				],
 				"subfolders": [],
 				"name": "Controls"

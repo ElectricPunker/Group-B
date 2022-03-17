@@ -71,6 +71,71 @@
 					}
 				},
 				{
+					"type": "light",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 116,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1247,
+						"y": 40,
+						"width": 1605.4621117122604,
+						"height": 656.5760948692935,
+						"originX": 0.5431034482758621,
+						"originY": -0.5949367088607594,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 117,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"parameters": {
+								"intensity": 0.2
+							}
+						}
+					},
+					"world": {
+						"x": 1229.3116883116882,
+						"y": 452.1811594202899,
+						"width": 1660.3333333333333,
+						"height": 737.1294964028776,
+						"originX": 0.5324675324675324,
+						"originY": 0.07971014492753623,
+						"color": [
+							1,
+							1,
+							1,
+							0.4
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Pointer",
 					"properties": {
 						"initially-visible": true,
