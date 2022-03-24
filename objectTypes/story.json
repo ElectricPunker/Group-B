@@ -4,7 +4,13 @@
 	"sid": 398928940591558,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 387520199485160
+		}
+	],
 	"effectTypes": [
 		{
 			"effectId": "warpripple",

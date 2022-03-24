@@ -159,14 +159,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "warpripple",
 			"name": "Warp ripple",
@@ -184,16 +176,16 @@
 		},
 		{
 			"type": "effect",
-			"id": "difference",
-			"name": "Difference",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "effect",
-			"id": "glowhorizontal",
-			"name": "Glow horizontal",
+			"id": "difference",
+			"name": "Difference",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -205,18 +197,13 @@
 			"Browser",
 			"Audio",
 			"armCannon",
-			"player",
 			"Walls",
 			"Enemy4",
 			"door",
-			"Enemybullet2",
 			"key",
-			"Playerbullet2",
 			"Pointer",
-			"Story",
 			"Gametitle",
-			"light",
-			"Sprite"
+			"light"
 		],
 		"subfolders": [
 			{
@@ -280,7 +267,8 @@
 					"ShipTurrent",
 					"ShipTurrent2",
 					"Enemyturrent2",
-					"Enemyturrent3"
+					"Enemyturrent3",
+					"Enemyturrent4"
 				],
 				"subfolders": [],
 				"name": "Turrents"
@@ -288,7 +276,8 @@
 			{
 				"items": [
 					"ExitHere",
-					"Transition"
+					"Transition",
+					"ExitHere2"
 				],
 				"subfolders": [],
 				"name": "Tranistion"
@@ -296,7 +285,8 @@
 			{
 				"items": [
 					"Fire",
-					"Glass"
+					"Glass",
+					"BackgroundLight"
 				],
 				"subfolders": [],
 				"name": "Effects"
@@ -309,6 +299,14 @@
 				],
 				"subfolders": [],
 				"name": "Instructions"
+			},
+			{
+				"items": [
+					"Story",
+					"Bubble"
+				],
+				"subfolders": [],
+				"name": "Dialogue"
 			}
 		]
 	},
@@ -320,21 +318,22 @@
 	},
 	"layouts": {
 		"items": [
-			"Start",
-			"Raheem Layout 1",
-			"Manny Layout 2",
-			"Raheem Layout 3",
-			"Manny Layout 4",
-			"Game Over"
+			"START",
+			"LEVEL 1",
+			"OPT",
+			"LEVEL 3",
+			"BOSS",
+			"Game Over",
+			"LEVEL 2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Manny Event sheet 2",
-			"Raheem Event sheet 3",
-			"Manny Event sheet 4",
-			"Raheem Event sheet 1",
+			"LEVEL 2 EVENT SHEET",
+			"LEVEL 3 EVENT SHEET",
+			"BOSS EVENT SHEET",
+			"LEVEL 1 EVENT SHEET",
 			"Game Over Event sheet 1",
 			"Start Event Sheet"
 		],

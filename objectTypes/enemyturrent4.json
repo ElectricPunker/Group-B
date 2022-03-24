@@ -1,0 +1,67 @@
+{
+	"name": "Enemyturrent4",
+	"plugin-id": "Sprite",
+	"sid": 933632629446611,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 870686139423294
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 374687392008566
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 240,
+						"height": 98,
+						"originX": 0.9875,
+						"originY": 0.7142857142857143,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9705495,
+						"collisionPoly": {
+							"points": [
+								0.9958333333333333,
+								0.9897959183673469,
+								0,
+								0.9897959183673469,
+								0,
+								0,
+								0.9958333333333333,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Barrel",
+								"x": -0.03333333333333333,
+								"y": 0.19387755102040816
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 686667048100397,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

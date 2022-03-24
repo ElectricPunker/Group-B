@@ -1,36 +1,35 @@
 {
-	"name": "Zoomtrigger",
+	"name": "Bubble",
 	"plugin-id": "Sprite",
-	"sid": 936102841999732,
+	"sid": 300636609434353,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "Zoom_ID",
-			"type": "number",
-			"desc": "",
-			"sid": 681202680940948
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 455777069789325
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 218,
+						"height": 150,
+						"originX": 0.5091743119266054,
+						"originY": 0.4866666666666667,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4286894,
+						"imageSpriteId": 6530474,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 600523984652553,
+				"sid": 564998899593968,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
