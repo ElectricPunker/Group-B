@@ -1,0 +1,54 @@
+{
+	"name": "Firetrap",
+	"plugin-id": "Sprite",
+	"sid": 542459093013294,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "water",
+			"name": "Water"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 252,
+						"height": 105,
+						"originX": 0.5,
+						"originY": -0.2,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 915613,
+						"collisionPoly": {
+							"points": [
+								0.006725854183481301,
+								0.6553672685846391,
+								0.9946193987559271,
+								0.6747377409484722,
+								0.996031746031746,
+								0.9904761904761905,
+								0.003968253968253968,
+								0.9904761904761905
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 986727944132294,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

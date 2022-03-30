@@ -189,6 +189,14 @@
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r285.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "3ca48n7ggyh",
@@ -228,7 +236,11 @@
 					"Sky",
 					"Window2",
 					"GroundInside",
-					"Sky2"
+					"Sky2",
+					"InsideBuilding",
+					"Wall",
+					"Floor1",
+					"Door3"
 				],
 				"subfolders": [],
 				"name": "Background"
@@ -307,6 +319,20 @@
 				],
 				"subfolders": [],
 				"name": "Dialogue"
+			},
+			{
+				"items": [
+					"Firetrap"
+				],
+				"subfolders": [],
+				"name": "Hazards"
+			},
+			{
+				"items": [
+					"ShakeTrigger"
+				],
+				"subfolders": [],
+				"name": "Triggers"
 			}
 		]
 	},
@@ -324,7 +350,8 @@
 			"LEVEL 3",
 			"BOSS",
 			"Game Over",
-			"LEVEL 2"
+			"LEVEL 2",
+			"LEVEL 4"
 		],
 		"subfolders": []
 	},
@@ -335,7 +362,8 @@
 			"BOSS EVENT SHEET",
 			"LEVEL 1 EVENT SHEET",
 			"Game Over Event sheet 1",
-			"Start Event Sheet"
+			"Start Event Sheet",
+			"LEVEL 4 EVENT SHEET"
 		],
 		"subfolders": []
 	},
