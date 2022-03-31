@@ -2381,9 +2381,9 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player2",
-							"sid": 717656695479387,
+							"sid": 879363370705613,
 							"parameters": {
-								"object": "ExitHere2"
+								"object": "EnterHere"
 							}
 						}
 					],
@@ -2391,9 +2391,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 444513909234441,
+							"sid": 397604961276836,
 							"parameters": {
-								"layout": "LEVEL 3"
+								"layout": "LEVEL 4"
 							}
 						}
 					],

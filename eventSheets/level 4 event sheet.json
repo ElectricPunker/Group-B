@@ -481,6 +481,39 @@
 					],
 					"actions": [
 						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 183891421054251,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Firetrap",
+							"sid": 797351071062136,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Firetrap",
+							"sid": 604858832358021,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 694922584313610,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
 							"id": "acquire-target",
 							"objectClass": "ShipTurrent",
 							"sid": 803002190838312,
@@ -499,23 +532,46 @@
 							}
 						},
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Firetrap",
-							"sid": 305033880224935,
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 645834842077220,
 							"parameters": {
-								"collisions": "disabled"
+								"x": "ShipBullet.x",
+								"y": "ShipBullet.Y"
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "Firetrap",
-							"sid": 866743178082810,
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 185030746019506,
 							"parameters": {
-								"visibility": "invisible"
+								"scale": "2.0"
 							}
 						}
 					],
 					"sid": 340600946307889
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 784180052553167
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 516370805359475,
+							"parameters": {
+								"x": "ShipBullet.X",
+								"y": "ShipBullet.Y"
+							}
+						}
+					],
+					"sid": 736659566209638
 				},
 				{
 					"eventType": "block",
@@ -635,9 +691,75 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Camera",
+							"sid": 224438759827141
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 862142676735703,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "Player2",
+							"sid": 145639375878244,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "0.4",
+								"mode": "reducing-magnitude"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 347022895938890,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
 						}
 					],
 					"sid": 545972403743439
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 524319188050976,
+							"parameters": {
+								"object": "FireTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Firetrap2",
+							"sid": 952770702292769,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Firetrap2",
+							"sid": 190797162978972,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 491739360539394
 				}
 			],
 			"sid": 230212943072954

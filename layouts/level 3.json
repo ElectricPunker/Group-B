@@ -539,10 +539,10 @@
 						}
 					},
 					"world": {
-						"x": 2064,
-						"y": 1539,
-						"width": 196,
-						"height": -1111,
+						"x": 2074.5,
+						"y": 937.5,
+						"width": 341,
+						"height": -2314,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -964,48 +964,6 @@
 					}
 				},
 				{
-					"type": "ExitHere",
-					"properties": {
-						"text": "Exit Here!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 20,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.4392156862745098,
-							1,
-							0.9333333333333333,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 44,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1979.0106810970153,
-						"y": 931.7011554493996,
-						"width": 135,
-						"height": 107,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Fire",
 					"properties": {
 						"initially-visible": true,
@@ -1187,6 +1145,48 @@
 						"y": 165,
 						"width": 912.1475178035132,
 						"height": 142.41326133042284,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnterHere",
+					"properties": {
+						"text": "Enter Here!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.1843137254901961,
+							0.7568627450980392,
+							0.49019607843137253,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 44,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1836,
+						"y": 668,
+						"width": 70,
+						"height": 69,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -789,9 +789,9 @@
 					},
 					"world": {
 						"x": 1589,
-						"y": 26,
+						"y": 18.313649324452754,
 						"width": 744.0623686451802,
-						"height": 43.84864205219287,
+						"height": 34.47594070109838,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1188,9 +1188,9 @@
 						}
 					},
 					"world": {
-						"x": 438.32,
+						"x": 433.69599999999997,
 						"y": 710.8399999999999,
-						"width": 127,
+						"width": 93,
 						"height": 163,
 						"originX": 0.136,
 						"originY": 0.528,
@@ -1221,6 +1221,149 @@
 						"y": 710,
 						"width": 250,
 						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Camera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 131,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 992,
+						"y": 835,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Firetrap2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 132,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Water": {
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 10,
+								"frequency": 4,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 400,
+								"emboss": 0.3
+							}
+						}
+					},
+					"world": {
+						"x": 1598,
+						"y": 366,
+						"width": 53,
+						"height": 25,
+						"originX": 0.5,
+						"originY": -0.2,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FireTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 133,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1669.5,
+						"y": 476.5,
+						"width": 67,
+						"height": 55,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerHitBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 134,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": true
+							}
+						}
+					},
+					"world": {
+						"x": 1301.9403076171875,
+						"y": 1299.6559732774172,
+						"width": 24.296217448459984,
+						"height": 47.458058307365775,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

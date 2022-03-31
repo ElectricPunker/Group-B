@@ -289,7 +289,8 @@
 				"items": [
 					"ExitHere",
 					"Transition",
-					"ExitHere2"
+					"ExitHere2",
+					"EnterHere"
 				],
 				"subfolders": [],
 				"name": "Tranistion"
@@ -322,14 +323,16 @@
 			},
 			{
 				"items": [
-					"Firetrap"
+					"Firetrap",
+					"Firetrap2"
 				],
 				"subfolders": [],
 				"name": "Hazards"
 			},
 			{
 				"items": [
-					"ShakeTrigger"
+					"ShakeTrigger",
+					"FireTrigger"
 				],
 				"subfolders": [],
 				"name": "Triggers"

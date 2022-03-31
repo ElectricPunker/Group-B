@@ -1,7 +1,7 @@
 {
-	"name": "InsideBuilding",
+	"name": "FireTrigger",
 	"plugin-id": "Sprite",
-	"sid": 791852487788996,
+	"sid": 702052664974000,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,24 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6761836,
-						"collisionPoly": {
-							"points": [
-								0.09599999999999997,
-								0.07679998779296876,
-								0.14816903127751274,
-								0.07774647457498868,
-								0.14971435546874978,
-								0.14971431187220965,
-								0.09371442522321427,
-								0.14971422467912895
-							]
-						},
+						"imageSpriteId": 4535404,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 550400270473509,
+				"sid": 254361641334931,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

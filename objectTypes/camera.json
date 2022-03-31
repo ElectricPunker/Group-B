@@ -4,7 +4,13 @@
 	"sid": 327726035828687,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 554023301077200
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5159687,
+						"imageSpriteId": 7029225,
 						"useCollisionPoly": true,
 						"duration": 1
 					}

@@ -1,41 +1,46 @@
 {
-	"name": "InsideBuilding",
+	"name": "Firetrap2",
 	"plugin-id": "Sprite",
-	"sid": 791852487788996,
+	"sid": 476089362513540,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "water",
+			"name": "Water"
+		}
+	],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 252,
+						"height": 105,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": -0.2,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6761836,
+						"imageSpriteId": 2423848,
 						"collisionPoly": {
 							"points": [
-								0.09599999999999997,
-								0.07679998779296876,
-								0.14816903127751274,
-								0.07774647457498868,
-								0.14971435546874978,
-								0.14971431187220965,
-								0.09371442522321427,
-								0.14971422467912895
+								0.006725854183481301,
+								0.6553672685846391,
+								0.9946193987559271,
+								0.6747377409484722,
+								0.996031746031746,
+								0.9904761904761905,
+								0.003968253968253968,
+								0.9904761904761905
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 550400270473509,
+				"sid": 811749776010440,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
