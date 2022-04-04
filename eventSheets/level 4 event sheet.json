@@ -11,6 +11,159 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Dying5",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 676095499076444
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player2",
+							"sid": 877917313886078,
+							"parameters": {
+								"animation": "\"Shot\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 424995791692582,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player2",
+							"sid": 499970778704568,
+							"parameters": {
+								"animation": "\"Shot\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 286976881682268,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 975074763796818
+						}
+					],
+					"sid": 879681920873435
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 383721280902519,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 368752898547115,
+							"parameters": {
+								"group-name": "\"Controls5\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 413044070199681,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 132434671169097
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 169247928328740
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 892397220206527
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "PlayerHitBox",
+							"sid": 283805674837421,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 925252598694762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 753195989405646
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 562246048129980,
+							"parameters": {
+								"group-name": "\"Player5\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 253709543382686,
+							"parameters": {
+								"seconds": "4.0"
+							}
+						}
+					],
+					"sid": 792413257602735
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Controls5",
 					"description": "",
 					"isActiveOnStart": true,
@@ -279,150 +432,6 @@
 						}
 					],
 					"sid": 206183802483736
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Player2",
-							"sid": 877917313886078,
-							"parameters": {
-								"animation": "\"Shot\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 424995791692582,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player2",
-							"sid": 499970778704568,
-							"parameters": {
-								"animation": "\"Shot\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 286976881682268,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 975074763796818
-						}
-					],
-					"sid": 879681920873435
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 383721280902519,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "Player2",
-							"sid": 799753433755847,
-							"behaviorType": "Platform",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 109744926743290,
-							"parameters": {
-								"group-name": "\"Controls\"",
-								"state": "deactivated"
-							}
-						}
-					],
-					"sid": 132434671169097
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 169247928328740
-						},
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 892397220206527
-						}
-					],
-					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "PlayerHitBox",
-							"sid": 283805674837421,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
-					"sid": 925252598694762
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 753195989405646
-						}
-					],
-					"actions": [
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 562246048129980,
-							"parameters": {
-								"group-name": "\"Player5\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 253709543382686,
-							"parameters": {
-								"seconds": "4.0"
-							}
-						}
-					],
-					"sid": 792413257602735
 				}
 			],
 			"sid": 412841707094548

@@ -11,6 +11,181 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Dying2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 511908298063081
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player2",
+							"sid": 761747517966771,
+							"parameters": {
+								"animation": "\"Shot\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 211929784912448,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player2",
+							"sid": 564237507396679,
+							"parameters": {
+								"animation": "\"Shot\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 441224577946542,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 791362638302813
+						}
+					],
+					"sid": 264884116633306
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 813160930600574,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 981985512931385,
+							"parameters": {
+								"group-name": "\"Controls2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 207024422987920,
+							"parameters": {
+								"group-name": "\"Controls3\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 704577736919394,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 841294881763535
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 481481680972812,
+							"parameters": {
+								"object": "Zoomtrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Ship2",
+							"sid": 977689618309659,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipTurrent2",
+							"sid": 739134272541628,
+							"behaviorType": "Turret",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipBullet",
+							"sid": 395045749757620,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 773296384358301
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 475159514649006
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 402959538392503
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "PlayerHitBox",
+							"sid": 313276465063233,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 945914073017160
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Controls2",
 					"description": "",
 					"isActiveOnStart": true,
@@ -279,163 +454,6 @@
 						}
 					],
 					"sid": 329571708345961
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Player2",
-							"sid": 761747517966771,
-							"parameters": {
-								"animation": "\"Shot\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 211929784912448,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player2",
-							"sid": 564237507396679,
-							"parameters": {
-								"animation": "\"Shot\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 441224577946542,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 791362638302813
-						}
-					],
-					"sid": 264884116633306
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 813160930600574,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "Player2",
-							"sid": 880036470472022,
-							"behaviorType": "Platform",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 263303086543821,
-							"parameters": {
-								"group-name": "\"Controls\"",
-								"state": "deactivated"
-							}
-						}
-					],
-					"sid": 841294881763535
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 481481680972812,
-							"parameters": {
-								"object": "Zoomtrigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "Ship2",
-							"sid": 977689618309659,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "ShipTurrent2",
-							"sid": 739134272541628,
-							"behaviorType": "Turret",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "ShipBullet",
-							"sid": 395045749757620,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						}
-					],
-					"sid": 773296384358301
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 475159514649006
-						},
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 402959538392503
-						}
-					],
-					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "PlayerHitBox",
-							"sid": 313276465063233,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
-					"sid": 945914073017160
 				}
 			],
 			"sid": 875769055221196
@@ -1142,6 +1160,172 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Dying4",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 737401165685429
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player2",
+							"sid": 521577466049023,
+							"parameters": {
+								"animation": "\"Shot\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 818850690891939,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player2",
+							"sid": 962660496435377,
+							"parameters": {
+								"animation": "\"Shot\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 925921122213093,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 931695800303659
+						}
+					],
+					"sid": 956845764765035
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 517772669823608,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 936666955106718,
+							"parameters": {
+								"group-name": "\"Controls4\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 250032078390776,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 511860777948343
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 906503013711754,
+							"parameters": {
+								"object": "Zoomtrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Ship2",
+							"sid": 481407326433563,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipTurrent2",
+							"sid": 835754015697773,
+							"behaviorType": "Turret",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "ShipBullet",
+							"sid": 246016159587606,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 956667746482337
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 327159605536105
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 138499298023304
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "PlayerHitBox",
+							"sid": 901035901246187,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 195783644622560
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Controls4",
 					"description": "",
 					"isActiveOnStart": true,
@@ -1410,163 +1594,6 @@
 						}
 					],
 					"sid": 293612584775524
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-animation-playing",
-							"objectClass": "Player2",
-							"sid": 521577466049023,
-							"parameters": {
-								"animation": "\"Shot\""
-							},
-							"isInverted": true
-						},
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 818850690891939,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Player2",
-							"sid": 962660496435377,
-							"parameters": {
-								"animation": "\"Shot\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 925921122213093,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 931695800303659
-						}
-					],
-					"sid": 956845764765035
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player2",
-							"sid": 517772669823608,
-							"parameters": {
-								"instance-variable": "Dying"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "Player2",
-							"sid": 250032078390776,
-							"behaviorType": "Platform",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 355223968925956,
-							"parameters": {
-								"group-name": "\"Controls\"",
-								"state": "deactivated"
-							}
-						}
-					],
-					"sid": 511860777948343
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 906503013711754,
-							"parameters": {
-								"object": "Zoomtrigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "Ship2",
-							"sid": 481407326433563,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "ShipTurrent2",
-							"sid": 835754015697773,
-							"behaviorType": "Turret",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "ShipBullet",
-							"sid": 246016159587606,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"state": "enabled"
-							}
-						}
-					],
-					"sid": 956667746482337
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 327159605536105
-						},
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 138499298023304
-						}
-					],
-					"actions": [
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "PlayerHitBox",
-							"sid": 901035901246187,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Player2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
-					"sid": 195783644622560
 				}
 			],
 			"sid": 546831607107732

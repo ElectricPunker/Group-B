@@ -128,8 +128,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
+			"id": "custom",
+			"name": "Custom",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -138,6 +138,14 @@
 			"type": "behavior",
 			"id": "Flash",
 			"name": "Flash",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -243,7 +251,8 @@
 					"InsideBuilding",
 					"Wall",
 					"Floor1",
-					"Door3"
+					"Door3",
+					"Barrier"
 				],
 				"subfolders": [],
 				"name": "Background"

@@ -7,8 +7,663 @@
 			"title": "Boss",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 292640285420252
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 949458873071468
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "ShipTurrent3Boss",
+							"sid": 824466331368023,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Ship3Boss",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 876146402464334
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-enabled",
+							"objectClass": "Ship3Boss",
+							"sid": 765758433251243,
+							"behaviorType": "Custom"
+						}
+					],
+					"actions": [
+						{
+							"id": "add-object-to-target",
+							"objectClass": "ShipTurrent3Boss",
+							"sid": 664473928391454,
+							"behaviorType": "Turret",
+							"parameters": {
+								"target": "Player2"
+							}
+						}
+					],
+					"sid": 119002120401760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 620681211453187,
+							"parameters": {
+								"interval-seconds": "0.7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "ShipTurrent3Boss",
+							"sid": 375455193228493,
+							"parameters": {
+								"object": "ShipBullet",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 349634928729716
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ShipBullet",
+							"sid": 920873205941195,
+							"parameters": {
+								"object": "Rooftop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet",
+							"sid": 350104562021268
+						}
+					],
+					"sid": 922430202908515
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 321892162925797,
+							"parameters": {
+								"object": "Ship3Boss"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 279251875559925,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 426802398778837
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Ship3Boss",
+									"sid": 730421725060547,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "5"
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "Ship3Boss",
+									"sid": 238241671371168,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.1",
+										"off-time": "0.1",
+										"duration": "1.0"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "PlayerBullet",
+									"sid": 994373784195949
+								}
+							],
+							"sid": 345443957116026
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 524819507285626
+						}
+					],
+					"actions": [
+						{
+							"id": "set-width",
+							"objectClass": "BossHealth",
+							"sid": 256327141132247,
+							"parameters": {
+								"width": "Ship3Boss.Health"
+							}
+						}
+					],
+					"sid": 931910192111007
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 931763476735872
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Ship3Boss",
+							"sid": 830295120894213,
+							"behaviorType": "Custom",
+							"parameters": {
+								"which": "vertical",
+								"speed": "500"
+							}
+						}
+					],
+					"sid": 101411225747055
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ship3Boss",
+							"sid": 835982709256752,
+							"parameters": {
+								"object": "Barrier"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "reverse",
+							"objectClass": "Ship3Boss",
+							"sid": 262982960993391,
+							"behaviorType": "Custom",
+							"parameters": {
+								"axes": "vertically"
+							}
+						}
+					],
+					"sid": 473994124159709
+				}
+			],
 			"sid": 447307012686566
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player6",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Dying",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [],
+					"sid": 621729869381552
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 266799172040228,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 969554118683457,
+							"parameters": {
+								"group-name": "\"Controls6\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 278769040201275,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 100127615191651
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Player2",
+							"sid": 210952907651392,
+							"parameters": {
+								"animation": "\"Shot\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player2",
+							"sid": 363035016835061,
+							"parameters": {
+								"instance-variable": "Dying"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Player2",
+							"sid": 710609029982991,
+							"parameters": {
+								"animation": "\"Shot\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 774333078866508,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 535707363391528
+						}
+					],
+					"sid": 602304772387177
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 571960779470564
+						},
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 508668248484375
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "PlayerHitBox",
+							"sid": 383143683968476,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Player2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 472853290948155
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 429114131901778,
+							"parameters": {
+								"object": "Ship3Boss"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "PlayerBullet",
+							"sid": 727493511728901
+						}
+					],
+					"sid": 376011196810574
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Controls6",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 327655000930937,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 226712843326796,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 906014613686646
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 767592627750859,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 337664332083011,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 261380841807029
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 183532931971287,
+									"parameters": {
+										"key": 39
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 340072002987498,
+									"parameters": {
+										"animation": "\"RunningRight\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 969614077886389
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 206468011371397,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 616007398552582,
+									"parameters": {
+										"animation": "\"RunningLeft\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 479817818619587
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 649043548264877,
+									"parameters": {
+										"key": 38
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 734532153672413,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 251741782199078
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 845011112359842,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 507234636098672,
+									"parameters": {
+										"animation": "\"Shooting\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player2",
+									"sid": 343798707806537,
+									"parameters": {
+										"object": "PlayerBullet",
+										"layer": "0",
+										"image-point": "1",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 346196935943478
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 453227432580357,
+									"parameters": {
+										"key": 70
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 993599816409026,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 921076522998515
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PlayerHitBox",
+									"sid": 997520639578873,
+									"parameters": {
+										"object": "ShipBullet"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player2",
+									"sid": 511429108024431,
+									"parameters": {
+										"instance-variable": "Dying",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 932192821775624
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PlayerHitBox",
+									"sid": 868324725035627,
+									"parameters": {
+										"object": "EnemyBullet"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player2",
+									"sid": 856073881260022,
+									"parameters": {
+										"instance-variable": "Dying",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 397413423978624
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "Player2",
+									"sid": 472153499959295
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 763957862108137,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 301331845002410
+								}
+							],
+							"sid": 495956041564621
+						}
+					],
+					"sid": 805991198073264
+				}
+			],
+			"sid": 688910606451110
 		}
 	],
 	"sid": 533679549862682
