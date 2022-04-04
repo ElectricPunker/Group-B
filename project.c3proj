@@ -211,7 +211,9 @@
 			"key",
 			"Pointer",
 			"Gametitle",
-			"light"
+			"light",
+			"BossHealth",
+			"NextLevel"
 		],
 		"subfolders": [
 			{
@@ -223,7 +225,8 @@
 					"Ship2",
 					"Enemy2",
 					"Enemy3",
-					"PlayerHitBox"
+					"PlayerHitBox",
+					"Ship3Boss"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -280,7 +283,8 @@
 					"ShipTurrent2",
 					"Enemyturrent2",
 					"Enemyturrent3",
-					"Enemyturrent4"
+					"Enemyturrent4",
+					"ShipTurrent3Boss"
 				],
 				"subfolders": [],
 				"name": "Turrents"
@@ -545,6 +549,6 @@
 		"cordovaAndroidScheme": "https"
 	},
 	"viewportWidth": 2100,
-	"viewportHeight": 1580,
+	"viewportHeight": 1480,
 	"firstLayout": null
 }

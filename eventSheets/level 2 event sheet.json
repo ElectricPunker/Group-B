@@ -1143,30 +1143,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 677847935870296,
-							"parameters": {
-								"object": "ExitHere2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-nextprevious-layout",
-							"objectClass": "System",
-							"sid": 846873565088120,
-							"parameters": {
-								"which": "next"
-							}
-						}
-					],
-					"sid": 420918907517496
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
 							"sid": 110395151087880,
@@ -1233,6 +1209,30 @@
 						}
 					],
 					"sid": 345452952231979
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 263129603892762,
+							"parameters": {
+								"object": "ExitHere2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 851807825145922,
+							"parameters": {
+								"layout": "BOSS"
+							}
+						}
+					],
+					"sid": 546154978704106
 				}
 			],
 			"sid": 476908085279921

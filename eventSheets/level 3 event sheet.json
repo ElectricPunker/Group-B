@@ -1135,111 +1135,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Level2",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 969052149280915,
-							"parameters": {
-								"object": "ExitHere"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 338098763147777,
-							"parameters": {
-								"layout": "BOSS"
-							}
-						}
-					],
-					"sid": 796883327238123
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 188493602935871,
-							"parameters": {
-								"key": 82
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "reload",
-							"objectClass": "Browser",
-							"sid": 334473579156693
-						}
-					],
-					"sid": 639100411672554
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 307763911967123,
-							"parameters": {
-								"object": "Zoomtrigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Story",
-							"sid": 584172884818841,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 631676940840913
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "Story",
-							"sid": 423223639567765
-						}
-					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 285255582761322,
-							"parameters": {
-								"seconds": "7"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Story",
-							"sid": 919819058991635
-						}
-					],
-					"sid": 742605446828367
-				}
-			],
-			"sid": 400435516114898
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Player4",
 			"description": "",
 			"isActiveOnStart": true,
@@ -2381,7 +2276,31 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player2",
-							"sid": 879363370705613,
+							"sid": 923004428176843,
+							"parameters": {
+								"object": "ExitHere2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 630416796112665,
+							"parameters": {
+								"layout": "LEVEL 3"
+							}
+						}
+					],
+					"sid": 787236998846092
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 772713093247900,
 							"parameters": {
 								"object": "EnterHere"
 							}
@@ -2391,13 +2310,13 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 397604961276836,
+							"sid": 912115814010623,
 							"parameters": {
 								"layout": "LEVEL 4"
 							}
 						}
 					],
-					"sid": 787236998846092
+					"sid": 498881094088613
 				},
 				{
 					"eventType": "block",

@@ -1,5 +1,15 @@
 {
 	"name": "BOSS EVENT SHEET",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Boss",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 447307012686566
+		}
+	],
 	"sid": 533679549862682
 }

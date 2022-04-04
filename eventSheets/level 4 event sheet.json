@@ -393,6 +393,36 @@
 						}
 					],
 					"sid": 925252598694762
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 753195989405646
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 562246048129980,
+							"parameters": {
+								"group-name": "\"Player5\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 253709543382686,
+							"parameters": {
+								"seconds": "4.0"
+							}
+						}
+					],
+					"sid": 792413257602735
 				}
 			],
 			"sid": 412841707094548
@@ -724,6 +754,15 @@
 							"behaviorType": "Platform",
 							"parameters": {
 								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 359943889431185,
+							"parameters": {
+								"group-name": "\"Player5\"",
+								"state": "activated"
 							}
 						}
 					],
