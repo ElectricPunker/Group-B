@@ -7,6 +7,104 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Sky",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 152,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -245,
+						"y": -35,
+						"width": 2636,
+						"height": 1872,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "light",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 153,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1144,
+						"y": 233,
+						"width": 1794.4621117122604,
+						"height": 820.5760948692935,
+						"originX": 0.5431034482758621,
+						"originY": -0.5949367088607594,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackgroundLight",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 154,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"GlowHorizontal": {
+							"parameters": {
+								"intensity": 0.2
+							}
+						}
+					},
+					"world": {
+						"x": 1181,
+						"y": 694.8985507246377,
+						"width": 1660.3333333333333,
+						"height": 949.1294964028776,
+						"originX": 0.5324675324675324,
+						"originY": 0.07971014492753623,
+						"color": [
+							1,
+							1,
+							1,
+							0.4
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Ship3Boss",
 					"properties": {
 						"initially-visible": true,

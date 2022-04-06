@@ -235,6 +235,74 @@
 						}
 					],
 					"sid": 473994124159709
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ship3Boss",
+							"sid": 829913542051987,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Ship3Boss",
+							"sid": 456155114320139
+						}
+					],
+					"sid": 643209251533737
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Ship3Boss",
+							"sid": 613303545960763
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 330596536522489,
+							"parameters": {
+								"layout": "Game Over"
+							}
+						}
+					],
+					"sid": 291750715402829
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "ShipBullet",
+							"sid": 714990877690410
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 581479779779797,
+							"parameters": {
+								"audio-file": "cannon sound effect (128 kbps)",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 171465130675948
 				}
 			],
 			"sid": 447307012686566
@@ -658,6 +726,30 @@
 								}
 							],
 							"sid": 495956041564621
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "PlayerBullet",
+									"sid": 183706656466951
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 806663756154160,
+									"parameters": {
+										"audio-file": "realistic gunshot sound effect (128 kbps)",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 625473522146033
 						}
 					],
 					"sid": 805991198073264

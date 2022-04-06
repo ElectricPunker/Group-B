@@ -459,9 +459,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 260431141907945,
+							"sid": 135982689589407,
 							"parameters": {
-								"layout": "Game Over"
+								"layout": "BOSS"
 							}
 						}
 					],
@@ -569,48 +569,9 @@
 								"mode": "enable",
 								"effect": "\"\""
 							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Camera",
-							"sid": 645834842077220,
-							"parameters": {
-								"x": "ShipBullet.x",
-								"y": "ShipBullet.Y"
-							}
-						},
-						{
-							"id": "set-layout-scale",
-							"objectClass": "System",
-							"sid": 185030746019506,
-							"parameters": {
-								"scale": "2.0"
-							}
 						}
 					],
 					"sid": 340600946307889
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 784180052553167
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Camera",
-							"sid": 516370805359475,
-							"parameters": {
-								"x": "ShipBullet.X",
-								"y": "ShipBullet.Y"
-							}
-						}
-					],
-					"sid": 736659566209638
 				},
 				{
 					"eventType": "block",
@@ -650,12 +611,51 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 736206377289080
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 546832185869920,
+							"parameters": {
+								"x": "ShipBullet.X",
+								"y": "ShipBullet.Y"
+							}
+						}
+					],
+					"sid": 556290160620941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-created",
 							"objectClass": "ShipBullet",
 							"sid": 519919841556093
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 299300136441649,
+							"parameters": {
+								"scale": "2.0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 168315131766673,
+							"parameters": {
+								"x": "ShipBullet.x",
+								"y": "ShipBullet.Y"
+							}
+						},
 						{
 							"id": "play",
 							"objectClass": "Audio",
@@ -715,6 +715,17 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 124624274771828,
+							"parameters": {
+								"audio-file": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
 						{
 							"id": "set-collisions-enabled",
 							"objectClass": "Firetrap",
