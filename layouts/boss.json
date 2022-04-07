@@ -108,7 +108,7 @@
 					"type": "Ship3Boss",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -314,7 +314,7 @@
 						"Turret": {
 							"properties": {
 								"range": 6000,
-								"rate-of-fire": 3.5,
+								"rate-of-fire": 2,
 								"rotate": true,
 								"rotate-speed": 360,
 								"target-mode": "first-in-range",

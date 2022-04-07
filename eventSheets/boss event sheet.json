@@ -68,12 +68,10 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 620681211453187,
-							"parameters": {
-								"interval-seconds": "0.7"
-							}
+							"id": "on-shoot",
+							"objectClass": "ShipTurrent3Boss",
+							"sid": 272348468485709,
+							"behaviorType": "Turret"
 						}
 					],
 					"actions": [
@@ -113,80 +111,185 @@
 					"sid": 922430202908515
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "PlayerBullet",
-							"sid": 321892162925797,
-							"parameters": {
-								"object": "Ship3Boss"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 279251875559925,
+					"eventType": "group",
+					"disabled": false,
+					"title": "Health",
+					"description": "",
+					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "trigger-once-while-true",
+									"id": "every-tick",
 									"objectClass": "System",
-									"sid": 426802398778837
+									"sid": 412504758568184
 								}
 							],
 							"actions": [
 								{
-									"id": "subtract-from-instvar",
-									"objectClass": "Ship3Boss",
-									"sid": 730421725060547,
+									"id": "set-width",
+									"objectClass": "BossHealth",
+									"sid": 711919088654143,
 									"parameters": {
-										"instance-variable": "Health",
-										"value": "5"
+										"width": "Ship3Boss.Health"
 									}
-								},
-								{
-									"id": "flash",
-									"objectClass": "Ship3Boss",
-									"sid": 238241671371168,
-									"behaviorType": "Flash",
-									"parameters": {
-										"on-time": "0.1",
-										"off-time": "0.1",
-										"duration": "1.0"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "PlayerBullet",
-									"sid": 994373784195949
 								}
 							],
-							"sid": 345443957116026
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
+							"sid": 713387933578918
+						},
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 524819507285626
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "PlayerBullet",
+									"sid": 298165716582979,
+									"parameters": {
+										"object": "Ship3Boss"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 395068237983197,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 595494204020540
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Ship3Boss",
+											"sid": 363387612358766,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "5"
+											}
+										},
+										{
+											"id": "flash",
+											"objectClass": "Ship3Boss",
+											"sid": 134865875745737,
+											"behaviorType": "Flash",
+											"parameters": {
+												"on-time": "0.1",
+												"off-time": "0.1",
+												"duration": "1.0"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "PlayerBullet",
+											"sid": 705871127856671
+										}
+									],
+									"sid": 364144312383413
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ship3Boss",
+									"sid": 850957551589763,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 2,
+										"value": "200"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Ship3Boss",
+									"sid": 175017883226304,
+									"parameters": {
+										"animation": "\"Damaged\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-rate-of-fire",
+									"objectClass": "ShipTurrent3Boss",
+									"sid": 605374913347489,
+									"behaviorType": "Turret",
+									"parameters": {
+										"rate-of-fire": "1.3"
+									}
+								}
+							],
+							"sid": 116022866327879
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ship3Boss",
+									"sid": 372253695485787,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 2,
+										"value": "100"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Ship3Boss",
+									"sid": 559192748210493,
+									"parameters": {
+										"animation": "\"Almost Destroyed\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-rate-of-fire",
+									"objectClass": "ShipTurrent3Boss",
+									"sid": 227148352329248,
+									"behaviorType": "Turret",
+									"parameters": {
+										"rate-of-fire": "0.7"
+									}
+								}
+							],
+							"sid": 507859431905056
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ship3Boss",
+									"sid": 436060460163987,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Ship3Boss",
+									"sid": 339573303723654
+								}
+							],
+							"sid": 225877600172731
 						}
 					],
-					"actions": [
-						{
-							"id": "set-width",
-							"objectClass": "BossHealth",
-							"sid": 256327141132247,
-							"parameters": {
-								"width": "Ship3Boss.Health"
-							}
-						}
-					],
-					"sid": 931910192111007
+					"sid": 456389890614614
 				},
 				{
 					"eventType": "block",
@@ -235,29 +338,6 @@
 						}
 					],
 					"sid": 473994124159709
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Ship3Boss",
-							"sid": 829913542051987,
-							"parameters": {
-								"instance-variable": "Health",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "Ship3Boss",
-							"sid": 456155114320139
-						}
-					],
-					"sid": 643209251533737
 				},
 				{
 					"eventType": "block",
@@ -564,6 +644,31 @@
 								}
 							],
 							"sid": 479817818619587
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 838894747516765,
+									"parameters": {
+										"key": 37
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Player2",
+									"sid": 878592828505595,
+									"parameters": {
+										"animation": "\"RunningLeft\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 629967401000735
 						},
 						{
 							"eventType": "block",

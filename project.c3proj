@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
@@ -249,10 +257,12 @@
 					"GroundInside",
 					"Sky2",
 					"InsideBuilding",
-					"Wall",
+					"Wall2",
 					"Floor1",
 					"Door3",
-					"Barrier"
+					"Barrier",
+					"Wall",
+					"Floor2"
 				],
 				"subfolders": [],
 				"name": "Background"
@@ -271,7 +281,8 @@
 					"Keyboard",
 					"Mouse",
 					"Pause",
-					"PauseMenu"
+					"PauseMenu",
+					"Gamepad"
 				],
 				"subfolders": [],
 				"name": "Controls"

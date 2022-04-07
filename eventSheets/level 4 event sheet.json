@@ -417,9 +417,17 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 335904317788316,
+									"sid": 906508781406767,
 									"parameters": {
 										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-layout-scale",
+									"objectClass": "System",
+									"sid": 405342790335861,
+									"parameters": {
+										"scale": "1.0"
 									}
 								},
 								{
@@ -437,12 +445,32 @@
 			"sid": 412841707094548
 		},
 		{
+			"eventType": "variable",
+			"name": "Gamestart",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 304780393418689
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Level5",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "variable",
+					"name": "IntendedScale",
+					"type": "number",
+					"initialValue": "2",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 140692432240734
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -614,6 +642,15 @@
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 736206377289080
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 742960169664673,
+							"parameters": {
+								"variable": "Gamestart"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
@@ -633,6 +670,36 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 515290873889316
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 872385974848579,
+							"parameters": {
+								"variable": "Gamestart"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 623873779173438,
+							"parameters": {
+								"x": "lerp(Self.X, Player2.X, dt)",
+								"y": "lerp(Self.Y, Player2.Y, dt)"
+							}
+						}
+					],
+					"sid": 353220557615500
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-created",
 							"objectClass": "ShipBullet",
 							"sid": 519919841556093
@@ -645,15 +712,6 @@
 							"sid": 299300136441649,
 							"parameters": {
 								"scale": "2.0"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Camera",
-							"sid": 168315131766673,
-							"parameters": {
-								"x": "ShipBullet.x",
-								"y": "ShipBullet.Y"
 							}
 						},
 						{
@@ -701,6 +759,15 @@
 							"id": "destroy",
 							"objectClass": "ShipBullet",
 							"sid": 295665414635645
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 518093995673140,
+							"parameters": {
+								"variable": "Gamestart",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 641323351949771
@@ -727,6 +794,15 @@
 							}
 						},
 						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 914170585459497,
+							"parameters": {
+								"x": "lerp(self.X,Player2.X,dt*0.3)",
+								"y": "lerp(Self.y,Player2.y,dt*0.3)"
+							}
+						},
+						{
 							"id": "set-collisions-enabled",
 							"objectClass": "Firetrap",
 							"sid": 398760831361348,
@@ -740,20 +816,6 @@
 							"sid": 393301073745784,
 							"parameters": {
 								"visibility": "visible"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Camera",
-							"sid": 224438759827141
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player2",
-							"sid": 862142676735703,
-							"behaviorType": "ScrollTo",
-							"parameters": {
-								"state": "enabled"
 							}
 						},
 						{

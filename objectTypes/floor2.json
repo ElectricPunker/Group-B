@@ -1,10 +1,16 @@
 {
-	"name": "Wall",
+	"name": "Floor2",
 	"plugin-id": "Sprite",
-	"sid": 176474561079440,
+	"sid": 970876575681451,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 902643361018541
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6279252,
+						"imageSpriteId": 3250482,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 181310860252304,
+				"sid": 412363439466878,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

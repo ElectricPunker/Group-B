@@ -53,7 +53,76 @@
 					}
 				],
 				"sid": 225348941135275,
-				"name": "Animation 1",
+				"name": "Normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2881485,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 302600490384590,
+				"name": "Damaged",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4933637,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 188027813002944,
+				"name": "Almost Destroyed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 753039,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 264250784289022,
+				"name": "Explosion",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
