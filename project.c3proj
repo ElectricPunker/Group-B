@@ -242,7 +242,8 @@
 					"Enemy2",
 					"Enemy3",
 					"PlayerHitBox",
-					"Ship3Boss"
+					"Ship3Boss",
+					"EnemyShield"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -304,7 +305,8 @@
 					"Enemyturrent2",
 					"Enemyturrent3",
 					"Enemyturrent4",
-					"ShipTurrent3Boss"
+					"ShipTurrent3Boss",
+					"Enemyturrent5"
 				],
 				"subfolders": [],
 				"name": "Turrents"
@@ -348,7 +350,8 @@
 			{
 				"items": [
 					"Firetrap",
-					"Firetrap2"
+					"Firetrap2",
+					"Shield"
 				],
 				"subfolders": [],
 				"name": "Hazards"

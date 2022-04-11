@@ -785,6 +785,52 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "has-los-to-object",
+							"objectClass": "EnemyShield",
+							"sid": 979737807757905,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player2",
+								"image-point": "0"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 719398548570582,
+							"parameters": {
+								"interval-seconds": "1.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Enemyturrent5",
+							"sid": 108821392836011,
+							"parameters": {
+								"object": "EnemyBullet",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Enemyturrent5",
+							"sid": 844674590381648,
+							"parameters": {
+								"x": "Player2.x",
+								"y": "Player2.y"
+							}
+						}
+					],
+					"sid": 599597134404001
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "every-tick",
 							"objectClass": "System",
 							"sid": 252375466511103
@@ -891,6 +937,43 @@
 						}
 					],
 					"sid": 125549091917073
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 569711420800694
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Enemyturrent5",
+							"sid": 865019574153872,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "EnemyShield",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Enemyturrent5",
+							"sid": 498617882752418,
+							"parameters": {
+								"x": "Player2.x",
+								"y": "Player2.Y"
+							}
+						}
+					],
+					"sid": 997132330723177
 				},
 				{
 					"eventType": "block",
@@ -1146,6 +1229,21 @@
 						}
 					],
 					"sid": 335912635635933
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 566944189265975,
+							"parameters": {
+								"object": "Shield"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 283759429248202
 				}
 			],
 			"sid": 187521475189531
