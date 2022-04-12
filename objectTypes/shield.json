@@ -3,14 +3,15 @@
 	"plugin-id": "Sprite",
 	"sid": 388904107684899,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [
+	"instanceVariables": [
 		{
-			"behaviorId": "solid",
-			"name": "Solid",
-			"sid": 876372498322505
+			"name": "Shield",
+			"type": "number",
+			"desc": "",
+			"sid": 955940459885368
 		}
 	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [

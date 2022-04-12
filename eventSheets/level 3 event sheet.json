@@ -1242,8 +1242,46 @@
 							}
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Shield",
+							"sid": 157931349182449,
+							"parameters": {
+								"instance-variable": "Shield",
+								"value": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "PlayerBullet",
+							"sid": 536715826598699
+						}
+					],
 					"sid": 283759429248202
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Shield",
+							"sid": 496274168743497,
+							"parameters": {
+								"instance-variable": "Shield",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Shield",
+							"sid": 978647175824756
+						}
+					],
+					"sid": 157972635865046
 				}
 			],
 			"sid": 187521475189531

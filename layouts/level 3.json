@@ -1360,19 +1360,14 @@
 						"live-preview": false
 					},
 					"uid": 71,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
+					"instanceVariables": {
+						"Shield": 10
 					},
+					"behaviors": {},
 					"world": {
-						"x": 1812.4608720270487,
+						"x": 1816.9608720270487,
 						"y": 674.5261308423826,
-						"width": 27.30200974912509,
+						"width": 18.30200974912509,
 						"height": 111.11306538777774,
 						"originX": 0.5,
 						"originY": 0.5,

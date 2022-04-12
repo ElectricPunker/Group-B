@@ -121,6 +121,99 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 214091802818400
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "Ship3Boss",
+									"sid": 930965306703283,
+									"behaviorType": "Custom",
+									"parameters": {
+										"which": "vertical",
+										"speed": "500"
+									}
+								}
+							],
+							"sid": 879191597659232
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Ship3Boss",
+									"sid": 927409370775945,
+									"parameters": {
+										"object": "Barrier"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "reverse",
+									"objectClass": "Ship3Boss",
+									"sid": 890611205652597,
+									"behaviorType": "Custom",
+									"parameters": {
+										"axes": "vertically"
+									}
+								}
+							],
+							"sid": 323214716200820
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "Ship3Boss",
+									"sid": 273309720686641
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 386341790101162,
+									"parameters": {
+										"layout": "Game Over"
+									}
+								}
+							],
+							"sid": 230623491336134
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "ShipBullet",
+									"sid": 754125157280085
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 460656243225274,
+									"parameters": {
+										"audio-file": "cannon sound effect (128 kbps)",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 499548947847249
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "every-tick",
 									"objectClass": "System",
 									"sid": 412504758568184
@@ -211,10 +304,10 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Ship3Boss",
-									"sid": 175017883226304,
+									"sid": 483345045167981,
 									"parameters": {
 										"animation": "\"Damaged\"",
-										"from": "beginning"
+										"from": "current-frame"
 									}
 								},
 								{
@@ -247,10 +340,10 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Ship3Boss",
-									"sid": 559192748210493,
+									"sid": 220574299959447,
 									"parameters": {
 										"animation": "\"Almost Destroyed\"",
-										"from": "beginning"
+										"from": "current-frame"
 									}
 								},
 								{
@@ -290,99 +383,6 @@
 						}
 					],
 					"sid": 456389890614614
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 931763476735872
-						}
-					],
-					"actions": [
-						{
-							"id": "set-speed",
-							"objectClass": "Ship3Boss",
-							"sid": 830295120894213,
-							"behaviorType": "Custom",
-							"parameters": {
-								"which": "vertical",
-								"speed": "500"
-							}
-						}
-					],
-					"sid": 101411225747055
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Ship3Boss",
-							"sid": 835982709256752,
-							"parameters": {
-								"object": "Barrier"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "reverse",
-							"objectClass": "Ship3Boss",
-							"sid": 262982960993391,
-							"behaviorType": "Custom",
-							"parameters": {
-								"axes": "vertically"
-							}
-						}
-					],
-					"sid": 473994124159709
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "Ship3Boss",
-							"sid": 613303545960763
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 330596536522489,
-							"parameters": {
-								"layout": "Game Over"
-							}
-						}
-					],
-					"sid": 291750715402829
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "ShipBullet",
-							"sid": 714990877690410
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 581479779779797,
-							"parameters": {
-								"audio-file": "cannon sound effect (128 kbps)",
-								"loop": "not-looping",
-								"volume": "0",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 171465130675948
 				}
 			],
 			"sid": 447307012686566
