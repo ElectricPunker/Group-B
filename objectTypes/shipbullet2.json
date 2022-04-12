@@ -1,0 +1,43 @@
+{
+	"name": "ShipBullet2",
+	"plugin-id": "Sprite",
+	"sid": 473306582165003,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 635367503522639
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 159,
+						"height": 55,
+						"originX": 0.5408805031446541,
+						"originY": 0.7090909090909091,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1997732,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 413086367762478,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

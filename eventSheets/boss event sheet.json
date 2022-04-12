@@ -145,10 +145,10 @@
 							"conditions": [
 								{
 									"id": "on-collision-with-another-object",
-									"objectClass": "Ship3Boss",
-									"sid": 927409370775945,
+									"objectClass": "Barrier",
+									"sid": 837005345692396,
 									"parameters": {
-										"object": "Barrier"
+										"object": "Ship3Boss"
 									}
 								}
 							],
@@ -292,11 +292,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 850957551589763,
+									"sid": 323580435039364,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "200"
+										"value": "299"
 									}
 								}
 							],
@@ -321,6 +321,43 @@
 								}
 							],
 							"sid": 116022866327879
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Ship3Boss",
+									"sid": 736236141285833,
+									"parameters": {
+										"instance-variable": "Health",
+										"comparison": 2,
+										"value": "200"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 588649987241108,
+									"parameters": {
+										"interval-seconds": "0.5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "ShipTurrent3Boss",
+									"sid": 673781828266377,
+									"parameters": {
+										"object": "ShipBullet2",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 383085936306511
 						},
 						{
 							"eventType": "block",
@@ -380,6 +417,12 @@
 								}
 							],
 							"sid": 225877600172731
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [],
+							"sid": 823705570030431
 						}
 					],
 					"sid": 456389890614614
@@ -805,6 +848,31 @@
 								}
 							],
 							"sid": 397413423978624
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "PlayerHitBox",
+									"sid": 471586123551987,
+									"parameters": {
+										"object": "ShipBullet2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player2",
+									"sid": 549334661126212,
+									"parameters": {
+										"instance-variable": "Dying",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 594486088784905
 						},
 						{
 							"eventType": "block",
