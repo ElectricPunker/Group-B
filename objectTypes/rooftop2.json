@@ -1,14 +1,14 @@
 {
-	"name": "ShipBullet2",
+	"name": "Rooftop2",
 	"plugin-id": "Sprite",
-	"sid": 473306582165003,
+	"sid": 387319672693085,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 635367503522639
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 249822072263719
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 159,
-						"height": 55,
-						"originX": 0.5408805031446541,
-						"originY": 0.7090909090909091,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2563437,
+						"imageSpriteId": 5006766,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 413086367762478,
+				"sid": 414338023765535,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -111,6 +111,69 @@
 					"sid": 922430202908515
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ShipBullet2",
+							"sid": 883101307126687,
+							"parameters": {
+								"object": "Rooftop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet2",
+							"sid": 626382192944948
+						}
+					],
+					"sid": 684655084764969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ShipBullet",
+							"sid": 688837514104763,
+							"parameters": {
+								"object": "Rooftop2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet",
+							"sid": 208340795718215
+						}
+					],
+					"sid": 802086370896661
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "ShipBullet2",
+							"sid": 672596750302789,
+							"parameters": {
+								"object": "Rooftop2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "ShipBullet2",
+							"sid": 399749474654121
+						}
+					],
+					"sid": 313241744931693
+				},
+				{
 					"eventType": "group",
 					"disabled": false,
 					"title": "Health",
@@ -292,7 +355,7 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 323580435039364,
+									"sid": 416283944459254,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
@@ -320,7 +383,36 @@
 									}
 								}
 							],
-							"sid": 116022866327879
+							"sid": 116022866327879,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 348419788809516,
+											"parameters": {
+												"interval-seconds": "1.7"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "ShipTurrent3Boss",
+											"sid": 724334518025331,
+											"parameters": {
+												"object": "ShipBullet2",
+												"layer": "0",
+												"image-point": "1",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 875176938315908
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -328,48 +420,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 736236141285833,
+									"sid": 328076536061854,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "200"
-									}
-								},
-								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 588649987241108,
-									"parameters": {
-										"interval-seconds": "0.5"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
-									"objectClass": "ShipTurrent3Boss",
-									"sid": 673781828266377,
-									"parameters": {
-										"object": "ShipBullet2",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								}
-							],
-							"sid": 383085936306511
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "Ship3Boss",
-									"sid": 372253695485787,
-									"parameters": {
-										"instance-variable": "Health",
-										"comparison": 2,
-										"value": "100"
+										"value": "250"
 									}
 								}
 							],
@@ -377,9 +432,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Ship3Boss",
-									"sid": 220574299959447,
+									"sid": 470663165808938,
 									"parameters": {
-										"animation": "\"Almost Destroyed\"",
+										"animation": "\"Critical\"",
 										"from": "current-frame"
 									}
 								},
@@ -391,6 +446,39 @@
 									"parameters": {
 										"rate-of-fire": "0.7"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Firetrap2",
+									"sid": 588801043431970,
+									"parameters": {
+										"animation": "\"Fire\"",
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "Firetrap2",
+									"sid": 415466981267686,
+									"parameters": {
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Firetrap2",
+									"sid": 860974349237879,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Firetrap2",
+									"sid": 960682201691620,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 507859431905056
@@ -399,9 +487,30 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player2",
+									"sid": 344071029802076,
+									"parameters": {
+										"object": "Firetrap2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Player2",
+									"sid": 260195141815505
+								}
+							],
+							"sid": 285343542315414
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 436060460163987,
+									"sid": 846515164466266,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 0,
@@ -413,16 +522,10 @@
 								{
 									"id": "destroy",
 									"objectClass": "Ship3Boss",
-									"sid": 339573303723654
+									"sid": 672305182006219
 								}
 							],
-							"sid": 225877600172731
-						},
-						{
-							"eventType": "block",
-							"conditions": [],
-							"actions": [],
-							"sid": 823705570030431
+							"sid": 105815685656097
 						}
 					],
 					"sid": 456389890614614

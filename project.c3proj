@@ -152,6 +152,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -263,7 +271,8 @@
 					"Door3",
 					"Barrier",
 					"Wall",
-					"Floor2"
+					"Floor2",
+					"Rooftop2"
 				],
 				"subfolders": [],
 				"name": "Background"

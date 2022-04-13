@@ -1272,7 +1272,7 @@
 					"type": "Firetrap2",
 					"properties": {
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Fire",
 						"initial-frame": 0,
 						"enable-collisions": false,
 						"live-preview": false
