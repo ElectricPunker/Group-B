@@ -1120,6 +1120,32 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 537468648238915,
+							"parameters": {
+								"object": "EnemyShield"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Enemyturrent5",
+							"sid": 325885488223337
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EnemyShield",
+							"sid": 595284987509282
+						}
+					],
+					"sid": 726400095609151
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
 							"sid": 266023355751325

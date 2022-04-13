@@ -355,11 +355,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 416283944459254,
+									"sid": 224599928641997,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "299"
+										"value": "200"
 									}
 								}
 							],
@@ -420,11 +420,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 328076536061854,
+									"sid": 272871549587976,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "250"
+										"value": "100"
 									}
 								}
 							],
@@ -478,6 +478,15 @@
 									"sid": 960682201691620,
 									"parameters": {
 										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-speed",
+									"objectClass": "ShipBullet",
+									"sid": 190669446377684,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"speed": "800"
 									}
 								}
 							],

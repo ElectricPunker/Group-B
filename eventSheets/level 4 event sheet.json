@@ -618,6 +618,15 @@
 								"mode": "enable",
 								"effect": "\"\""
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 304758936437386,
+							"parameters": {
+								"x": "Ship2.X",
+								"y": "Ship2.Y"
+							}
 						}
 					],
 					"sid": 340600946307889
