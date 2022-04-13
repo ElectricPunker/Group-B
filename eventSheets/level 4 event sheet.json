@@ -569,6 +569,11 @@
 					],
 					"actions": [
 						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 978182115757563
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "Player2",
 							"sid": 183891421054251,
@@ -875,6 +880,17 @@
 							"parameters": {
 								"group-name": "\"Player5\"",
 								"state": "activated"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 292327198233967,
+							"parameters": {
+								"audio-file": "Synthwave Fire level_1",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],

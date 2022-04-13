@@ -448,6 +448,16 @@
 					"name": "strong_wind_sound_effect_128_kbps.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 571958872950970
+				},
+				{
+					"name": "Boss Level music_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 740300027679174
+				},
+				{
+					"name": "Synthwave Fire level_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 359988454856011
 				}
 			],
 			"subfolders": []

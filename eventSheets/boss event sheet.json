@@ -1041,6 +1041,43 @@
 				}
 			],
 			"sid": 688910606451110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 823365091742965
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 459861346606586
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 645442845075553,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 109673235525813,
+					"parameters": {
+						"audio-file": "Boss Level music_2",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 143599663599913
 		}
 	],
 	"sid": 533679549862682
