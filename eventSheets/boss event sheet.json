@@ -355,11 +355,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 224599928641997,
+									"sid": 453771425113757,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "200"
+										"value": "290"
 									}
 								}
 							],
@@ -420,11 +420,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 272871549587976,
+									"sid": 657639740142189,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "100"
+										"value": "280"
 									}
 								}
 							],
@@ -448,49 +448,78 @@
 									}
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "Firetrap2",
-									"sid": 588801043431970,
+									"id": "set-speed",
+									"objectClass": "ShipBullet",
+									"sid": 752553405769909,
+									"behaviorType": "Bullet",
 									"parameters": {
-										"animation": "\"Fire\"",
-										"from": "current-frame"
-									}
-								},
-								{
-									"id": "start-animation",
-									"objectClass": "Firetrap2",
-									"sid": 415466981267686,
-									"parameters": {
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-collisions-enabled",
-									"objectClass": "Firetrap2",
-									"sid": 860974349237879,
-									"parameters": {
-										"collisions": "enabled"
+										"speed": "800"
 									}
 								},
 								{
 									"id": "set-visible",
-									"objectClass": "Firetrap2",
-									"sid": 960682201691620,
+									"objectClass": "SmokeWarning",
+									"sid": 524138998286768,
 									"parameters": {
 										"visibility": "visible"
 									}
 								},
 								{
-									"id": "set-speed",
-									"objectClass": "ShipBullet",
-									"sid": 190669446377684,
-									"behaviorType": "Bullet",
+									"id": "set-animation",
+									"objectClass": "SmokeWarning",
+									"sid": 312656533548702,
 									"parameters": {
-										"speed": "800"
+										"animation": "\"Smoke\"",
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "SmokeWarning",
+									"sid": 960103610148066,
+									"parameters": {
+										"from": "beginning"
 									}
 								}
 							],
 							"sid": 507859431905056
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "SmokeWarning",
+									"sid": 111349615703443,
+									"parameters": {
+										"animation": "\"Smoke\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "SmokeWarning",
+									"sid": 905732124869578
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Firetrap2",
+									"sid": 768217079177165,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Firetrap2",
+									"sid": 775268030775280,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								}
+							],
+							"sid": 998360386083525
 						},
 						{
 							"eventType": "block",

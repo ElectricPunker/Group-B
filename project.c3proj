@@ -237,7 +237,8 @@
 			"Gametitle",
 			"light",
 			"BossHealth",
-			"NextLevel"
+			"NextLevel",
+			"ShieldTrtigger"
 		],
 		"subfolders": [
 			{
@@ -361,7 +362,8 @@
 				"items": [
 					"Firetrap",
 					"Firetrap2",
-					"Shield"
+					"Shield",
+					"SmokeWarning"
 				],
 				"subfolders": [],
 				"name": "Hazards"

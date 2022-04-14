@@ -1308,6 +1308,30 @@
 						}
 					],
 					"sid": 157972635865046
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player2",
+							"sid": 958930182370094,
+							"parameters": {
+								"object": "ShieldTrtigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Shield",
+							"sid": 546736868825895,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 192217789935829
 				}
 			],
 			"sid": 187521475189531

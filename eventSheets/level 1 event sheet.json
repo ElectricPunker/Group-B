@@ -515,6 +515,15 @@
 								"image-point": "1",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "set-rate-of-fire",
+							"objectClass": "ShipTurrent",
+							"sid": 707811729450518,
+							"behaviorType": "Turret",
+							"parameters": {
+								"rate-of-fire": "0.7"
+							}
 						}
 					],
 					"sid": 680629398408766

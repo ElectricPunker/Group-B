@@ -7,6 +7,42 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "ShieldTrtigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1806.2923355831215,
+						"y": 702.2135785183175,
+						"width": 210.58467116624297,
+						"height": 251.5728429633649,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Sky",
 					"properties": {
 						"initially-visible": true,
@@ -1158,48 +1194,6 @@
 					}
 				},
 				{
-					"type": "EnterHere",
-					"properties": {
-						"text": "Enter Here!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 20,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.1843137254901961,
-							0.7568627450980392,
-							0.49019607843137253,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 44,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1836,
-						"y": 668,
-						"width": 70,
-						"height": 69,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BackgroundLight",
 					"properties": {
 						"initially-visible": true,
@@ -1248,7 +1242,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1942,
+						"x": 1950,
 						"y": 697,
 						"width": 63.870364795813664,
 						"height": 107,
@@ -1296,7 +1290,7 @@
 						}
 					},
 					"world": {
-						"x": 1859.5546381987897,
+						"x": 1848.5546381987897,
 						"y": 668.5396990560029,
 						"width": -50.833435,
 						"height": -10.510453,
@@ -1334,7 +1328,7 @@
 						}
 					},
 					"world": {
-						"x": 1853.1691559167905,
+						"x": 1843.1691559167905,
 						"y": 687.2995858852963,
 						"width": 42.664635,
 						"height": 92.376818,
@@ -1371,6 +1365,79 @@
 						"height": 111.11306538777774,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shield",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {
+						"Shield": 10
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1862.5,
+						"y": 613,
+						"width": 18.30200974912509,
+						"height": 108.11306538777774,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnterHere",
+					"properties": {
+						"text": "Enter Here!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.1843137254901961,
+							0.7568627450980392,
+							0.49019607843137253,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 44,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1888.1659226453996,
+						"y": 658.7501666342054,
+						"width": 70,
+						"height": 69,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
