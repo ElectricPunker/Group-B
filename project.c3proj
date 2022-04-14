@@ -79,6 +79,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
@@ -238,7 +246,9 @@
 			"light",
 			"BossHealth",
 			"NextLevel",
-			"ShieldTrtigger"
+			"ShieldTrtigger",
+			"Particles",
+			"GameManager"
 		],
 		"subfolders": [
 			{

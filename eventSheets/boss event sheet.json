@@ -14,6 +14,27 @@
 						{
 							"id": "on-start-of-layout",
 							"objectClass": "System",
+							"sid": 763542120141182
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Particles",
+							"sid": 235411717305655,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 515791690566646
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
 							"sid": 292640285420252
 						},
 						{
@@ -458,27 +479,19 @@
 								},
 								{
 									"id": "set-visible",
-									"objectClass": "SmokeWarning",
-									"sid": 524138998286768,
+									"objectClass": "Particles",
+									"sid": 467067477144835,
 									"parameters": {
 										"visibility": "visible"
 									}
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "SmokeWarning",
-									"sid": 312656533548702,
+									"id": "add-to-instvar",
+									"objectClass": "GameManager",
+									"sid": 856471558542317,
 									"parameters": {
-										"animation": "\"Smoke\"",
-										"from": "current-frame"
-									}
-								},
-								{
-									"id": "start-animation",
-									"objectClass": "SmokeWarning",
-									"sid": 960103610148066,
-									"parameters": {
-										"from": "beginning"
+										"instance-variable": "SmokeTimer",
+										"value": "1"
 									}
 								}
 							],
@@ -488,19 +501,21 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-animation-finished",
-									"objectClass": "SmokeWarning",
-									"sid": 111349615703443,
+									"id": "compare-instance-variable",
+									"objectClass": "GameManager",
+									"sid": 897642403289214,
 									"parameters": {
-										"animation": "\"Smoke\""
+										"instance-variable": "SmokeTimer",
+										"comparison": 5,
+										"value": "GameManager.SmokeTimerMax"
 									}
 								}
 							],
 							"actions": [
 								{
 									"id": "destroy",
-									"objectClass": "SmokeWarning",
-									"sid": 905732124869578
+									"objectClass": "Particles",
+									"sid": 190884504665354
 								},
 								{
 									"id": "set-visible",
