@@ -403,7 +403,8 @@
 			"BOSS",
 			"Game Over",
 			"LEVEL 2",
-			"LEVEL 4"
+			"LEVEL 4",
+			"TUTORIAL"
 		],
 		"subfolders": []
 	},
@@ -415,7 +416,8 @@
 			"LEVEL 1 EVENT SHEET",
 			"Game Over Event sheet 1",
 			"Start Event Sheet",
-			"LEVEL 4 EVENT SHEET"
+			"LEVEL 4 EVENT SHEET",
+			"TUTORIAL EVENT SHEET"
 		],
 		"subfolders": []
 	},
