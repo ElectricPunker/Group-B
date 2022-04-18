@@ -5,7 +5,127 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Gun",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 201,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 974.9476322697953,
+						"y": 456.1413250133313,
+						"width": 32.1047354604093,
+						"height": 23.788012480003033,
+						"originX": 0.5,
+						"originY": 0.3333333333333333,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Rooftop",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 202,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 917,
+						"y": 647,
+						"width": 853,
+						"height": -232,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 203,
+					"instanceVariables": {
+						"Dying": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 425,
+								"acceleration": 850,
+								"deceleration": 1220,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1500,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 849,
+						"y": 446,
+						"width": 34,
+						"height": 124.99999999999999,
+						"originX": 0.5277777777777778,
+						"originY": 0.4793388429752066,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 333955814727268,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -38,8 +158,8 @@
 	"sid": 944530012511239,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 4200,
-	"height": 2960,
+	"width": 2100,
+	"height": 900,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

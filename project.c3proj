@@ -293,7 +293,8 @@
 					"ShipBullet",
 					"EnemyBullet",
 					"PlayerBullet",
-					"ShipBullet2"
+					"ShipBullet2",
+					"Gun"
 				],
 				"subfolders": [],
 				"name": "Weapons"

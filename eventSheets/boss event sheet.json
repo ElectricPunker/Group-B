@@ -343,10 +343,10 @@
 										{
 											"id": "subtract-from-instvar",
 											"objectClass": "Ship3Boss",
-											"sid": 363387612358766,
+											"sid": 704798118691038,
 											"parameters": {
 												"instance-variable": "Health",
-												"value": "5"
+												"value": "15"
 											}
 										},
 										{
@@ -376,11 +376,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 453771425113757,
+									"sid": 139661707384342,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "290"
+										"value": "200"
 									}
 								}
 							],
@@ -441,11 +441,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "Ship3Boss",
-									"sid": 657639740142189,
+									"sid": 306662854921736,
 									"parameters": {
 										"instance-variable": "Health",
 										"comparison": 2,
-										"value": "280"
+										"value": "125"
 									}
 								}
 							],
