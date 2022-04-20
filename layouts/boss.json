@@ -116,7 +116,8 @@
 					"uid": 135,
 					"instanceVariables": {
 						"State": "Normal",
-						"Health": 300
+						"Health": 300,
+						"HealthGone": -300
 					},
 					"behaviors": {
 						"LineOfSight": {
@@ -144,7 +145,7 @@
 						}
 					},
 					"world": {
-						"x": 1783.5,
+						"x": 1784.5,
 						"y": 296.5,
 						"width": 324.2,
 						"height": 263.52186193660395,
@@ -1984,6 +1985,79 @@
 							1
 						],
 						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Ship3Boss2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Destroyed",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 204,
+					"instanceVariables": {
+						"State": "Normal",
+						"Health": 300,
+						"HealthGone": -300
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2761.5,
+						"y": -215.5,
+						"width": 391.2,
+						"height": 312.52186193660395,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Transition",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 205,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 0.5,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 1022,
+						"y": 782,
+						"width": 3146,
+						"height": 1713,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

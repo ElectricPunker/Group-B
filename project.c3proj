@@ -262,7 +262,8 @@
 					"Enemy3",
 					"PlayerHitBox",
 					"Ship3Boss",
-					"EnemyShield"
+					"EnemyShield",
+					"Ship3Boss2"
 				],
 				"subfolders": [],
 				"name": "Characters"

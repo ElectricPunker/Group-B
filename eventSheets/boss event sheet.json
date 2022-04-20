@@ -253,27 +253,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-destroyed",
-									"objectClass": "Ship3Boss",
-									"sid": 273309720686641
-								}
-							],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 386341790101162,
-									"parameters": {
-										"layout": "Game Over"
-									}
-								}
-							],
-							"sid": 230623491336134
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "on-created",
 									"objectClass": "ShipBullet",
 									"sid": 754125157280085
@@ -343,10 +322,10 @@
 										{
 											"id": "subtract-from-instvar",
 											"objectClass": "Ship3Boss",
-											"sid": 704798118691038,
+											"sid": 317731406346793,
 											"parameters": {
 												"instance-variable": "Health",
-												"value": "15"
+												"value": "100"
 											}
 										},
 										{
@@ -575,10 +554,161 @@
 								{
 									"id": "destroy",
 									"objectClass": "Ship3Boss",
-									"sid": 672305182006219
+									"sid": 618824731289282
+								},
+								{
+									"id": "destroy",
+									"objectClass": "ShipTurrent3Boss",
+									"sid": 596094546094602
+								},
+								{
+									"id": "destroy",
+									"objectClass": "ShipBullet",
+									"sid": 915508659358166
+								},
+								{
+									"id": "destroy",
+									"objectClass": "ShipBullet2",
+									"sid": 716027545746168
+								},
+								{
+									"id": "destroy",
+									"objectClass": "BossHealth",
+									"sid": 217619371564770
 								}
 							],
 							"sid": 105815685656097
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "BossHealth",
+									"sid": 978833134845850
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Ship3Boss2",
+									"sid": 528920388664077,
+									"parameters": {
+										"x": "Ship3Boss.x",
+										"y": "Ship3Boss.Y"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "Ship3Boss2",
+									"sid": 914439447674295,
+									"parameters": {
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Ship3Boss2",
+									"sid": 345609589026132,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Ship3Boss2",
+									"sid": 953822654072103,
+									"parameters": {
+										"width": "391.2",
+										"height": "312.521862"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 394831327122390,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Transition",
+									"sid": 330785953659500,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Transition",
+									"sid": 557842544583134,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 286131960064160
+						},
+						{
+							"functionName": "Fade2",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 205280699477663,
+									"parameters": {
+										"object-to-create": "Transition",
+										"layer": "0",
+										"x": "Gametitle.X",
+										"y": "Gametitle.Y",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Transition",
+									"sid": 938148122696125,
+									"parameters": {
+										"width": "3146",
+										"height": "1713"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Transition",
+									"sid": 614656688394117,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 384029956873921
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-fade-in-finished",
+									"objectClass": "Transition",
+									"sid": 249860273102967,
+									"behaviorType": "Fade"
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 726173342542344,
+									"parameters": {
+										"layout": "Game Over"
+									}
+								}
+							],
+							"sid": 193522917450070
 						}
 					],
 					"sid": 456389890614614
