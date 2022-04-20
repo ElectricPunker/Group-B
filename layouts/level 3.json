@@ -1000,56 +1000,6 @@
 					}
 				},
 				{
-					"type": "Fire",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": false
-							}
-						}
-					},
-					"effects": {
-						"WaterBackground": {
-							"parameters": {
-								"speed": 1,
-								"x-speed": 0.5,
-								"y-speed": 0.7,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
-								"delta": 20,
-								"reflectivity": 400,
-								"emboss": 0.3
-							}
-						}
-					},
-					"world": {
-						"x": -676,
-						"y": -231,
-						"width": -260.6564435173414,
-						"height": 35,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Controlstext",
 					"properties": {
 						"text": "Press F to fire your gun!",

@@ -200,14 +200,6 @@
 		},
 		{
 			"type": "effect",
-			"id": "waterbg",
-			"name": "Water background",
-			"author": "Viktor Korsun",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
 			"author": "Scirra",
@@ -346,7 +338,6 @@
 			},
 			{
 				"items": [
-					"Fire",
 					"Glass",
 					"BackgroundLight"
 				],

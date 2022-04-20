@@ -1047,32 +1047,7 @@
 							"sid": 223121687495396
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Fire",
-							"sid": 566317204369939,
-							"parameters": {
-								"object": "Ship2",
-								"image-point-optional": "1"
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Fire",
-							"sid": 684134659111373,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Ship2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
+					"actions": [],
 					"sid": 720564578519121
 				},
 				{

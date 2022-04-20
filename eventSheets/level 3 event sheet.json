@@ -1165,32 +1165,7 @@
 							"sid": 736117338327168
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Fire",
-							"sid": 985060658289581,
-							"parameters": {
-								"object": "Ship2",
-								"image-point-optional": "1"
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Fire",
-							"sid": 868452137407230,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Ship2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
+					"actions": [],
 					"sid": 870275283849224
 				},
 				{
@@ -2382,32 +2357,7 @@
 							"sid": 765796332510848
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Fire",
-							"sid": 209439542203710,
-							"parameters": {
-								"object": "Ship2",
-								"image-point-optional": "1"
-							}
-						},
-						{
-							"id": "pin-to-object-properties",
-							"objectClass": "Fire",
-							"sid": 672348489739191,
-							"behaviorType": "Pin",
-							"parameters": {
-								"pin-to": "Ship2",
-								"x": true,
-								"y": true,
-								"angle": true,
-								"width-type": "no",
-								"height-type": "no",
-								"z": false
-							}
-						}
-					],
+					"actions": [],
 					"sid": 736542326203547
 				},
 				{
