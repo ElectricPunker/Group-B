@@ -184,6 +184,30 @@
 				}
 			],
 			"sid": 777453382841283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 285680002834245,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 855473924295207,
+					"parameters": {
+						"layout": "START"
+					}
+				}
+			],
+			"sid": 918317822939647
 		}
 	],
 	"sid": 989660775176262

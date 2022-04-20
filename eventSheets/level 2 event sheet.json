@@ -1136,27 +1136,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 110395151087880,
-							"parameters": {
-								"key": 82
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "reload",
-							"objectClass": "Browser",
-							"sid": 358767845520999
-						}
-					],
-					"sid": 797212462008242
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player2",
 							"sid": 862184605831489,
@@ -1176,6 +1155,30 @@
 						}
 					],
 					"sid": 137189912240094
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 402493507543255,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 138756965440882,
+							"parameters": {
+								"layout": "START"
+							}
+						}
+					],
+					"sid": 257690932480083
 				},
 				{
 					"eventType": "block",

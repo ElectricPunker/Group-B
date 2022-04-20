@@ -624,9 +624,12 @@
 					],
 					"actions": [
 						{
-							"id": "reload",
-							"objectClass": "Browser",
-							"sid": 974529125569939
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 165210684606612,
+							"parameters": {
+								"layout": "START"
+							}
 						}
 					],
 					"sid": 913271415130037
