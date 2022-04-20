@@ -359,10 +359,10 @@
 										{
 											"id": "subtract-from-instvar",
 											"objectClass": "Ship3Boss",
-											"sid": 317731406346793,
+											"sid": 349046101088949,
 											"parameters": {
 												"instance-variable": "Health",
-												"value": "100"
+												"value": "20"
 											}
 										},
 										{
@@ -487,10 +487,10 @@
 								{
 									"id": "set-speed",
 									"objectClass": "ShipBullet",
-									"sid": 752553405769909,
+									"sid": 971526850575301,
 									"behaviorType": "Bullet",
 									"parameters": {
-										"speed": "800"
+										"speed": "750"
 									}
 								},
 								{
