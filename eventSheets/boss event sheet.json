@@ -2,6 +2,43 @@
 	"name": "BOSS EVENT SHEET",
 	"events": [
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 542740046894902
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 815807224489953
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 253686401729805,
+					"parameters": {
+						"seconds": "0.7"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 711871815679331,
+					"parameters": {
+						"audio-file": "Boss Level music_2",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"BossSong\""
+					}
+				}
+			],
+			"sid": 672848966382458
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Boss",
@@ -563,6 +600,11 @@
 								},
 								{
 									"id": "destroy",
+									"objectClass": "PlayerBullet",
+									"sid": 297091024553574
+								},
+								{
+									"id": "destroy",
 									"objectClass": "ShipBullet",
 									"sid": 915508659358166
 								},
@@ -575,6 +617,25 @@
 									"id": "destroy",
 									"objectClass": "BossHealth",
 									"sid": 217619371564770
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 755541297858606,
+									"parameters": {
+										"audio-file": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"Boom\""
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 683151939370016,
+									"parameters": {
+										"tag": "\"BossSong\""
+									}
 								}
 							],
 							"sid": 105815685656097
@@ -1215,43 +1276,6 @@
 				}
 			],
 			"sid": 688910606451110
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 823365091742965
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 459861346606586
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 645442845075553,
-					"parameters": {
-						"seconds": "0.7"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 109673235525813,
-					"parameters": {
-						"audio-file": "Boss Level music_2",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				}
-			],
-			"sid": 143599663599913
 		}
 	],
 	"sid": 533679549862682

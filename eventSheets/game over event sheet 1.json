@@ -2,46 +2,107 @@
 	"name": "Game Over Event sheet 1",
 	"events": [
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "LastTransition",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 602646466528455,
-					"parameters": {
-						"key": 82
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 614748083535077,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "Controlstext",
+							"sid": 407213332519531,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Transition",
+							"sid": 927603977377300,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Transition",
+							"sid": 466659197381109,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 370542043010776,
+							"parameters": {
+								"seconds": "4"
+							}
+						}
+					],
+					"sid": 465967111313486
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "Transition",
+							"sid": 596123679822145,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 177232871943807,
+							"parameters": {
+								"layout": "START"
+							}
+						}
+					],
+					"sid": 186351423655847
 				}
 			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 585320110214442,
-					"parameters": {
-						"layout": "START"
-					}
-				}
-			],
-			"sid": 514342000677439
+			"sid": 801391025164597
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "LastAudio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 257730091318610
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 441805355925421
+						}
+					],
+					"actions": [],
+					"sid": 779714093677479
 				}
 			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Audio",
-					"sid": 431237439065052
-				}
-			],
-			"sid": 152495680713657
+			"sid": 151794290349441
 		}
 	],
 	"sid": 991115867636061

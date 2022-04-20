@@ -486,7 +486,11 @@
 					},
 					"uid": 100,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
 					"effects": {
 						"Difference": {
 							"parameters": {}
