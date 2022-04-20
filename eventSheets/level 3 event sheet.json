@@ -797,13 +797,22 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 719398548570582,
+							"sid": 950798785724720,
 							"parameters": {
-								"interval-seconds": "1.5"
+								"interval-seconds": "0.7"
 							}
 						}
 					],
 					"actions": [
+						{
+							"id": "set-rate-of-fire",
+							"objectClass": "Enemyturrent5",
+							"sid": 140441365024542,
+							"behaviorType": "Turret",
+							"parameters": {
+								"rate-of-fire": "1.3"
+							}
+						},
 						{
 							"id": "spawn-another-object",
 							"objectClass": "Enemyturrent5",
@@ -2745,6 +2754,28 @@
 				}
 			],
 			"sid": 621435612977735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 939947483034142
+				}
+			],
+			"actions": [
+				{
+					"id": "set-wait-time",
+					"objectClass": "PressSpacebar",
+					"sid": 703402030478953,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "600"
+					}
+				}
+			],
+			"sid": 906702372418493
 		}
 	],
 	"sid": 390431601616824
