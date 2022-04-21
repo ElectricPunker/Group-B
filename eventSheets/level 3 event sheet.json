@@ -2448,6 +2448,140 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player2",
+							"sid": 348402723191578,
+							"parameters": {
+								"object": "EnterHere"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 942728233357348,
+							"parameters": {
+								"group-name": "\"Controls4\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 259852394699041,
+							"parameters": {
+								"group-name": "\"Controls3\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 377269184076923,
+							"parameters": {
+								"group-name": "\"Controls2\"",
+								"state": "deactivated"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player2",
+							"sid": 935782006090117,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 780916457616064,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player2",
+							"sid": 667203162486175,
+							"parameters": {
+								"object": "Transition",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transition",
+							"sid": 608584810781652,
+							"parameters": {
+								"x": "Player2.X",
+								"y": "Player2.Y"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Transition",
+							"sid": 217658781538088,
+							"parameters": {
+								"width": "6000",
+								"height": "6000"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Transition",
+							"sid": 511607678378249,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Transition",
+							"sid": 639002172280234,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 559786658774122,
+							"parameters": {
+								"seconds": "4"
+							}
+						}
+					],
+					"sid": 114025232666492
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "Transition",
+							"sid": 214569745663745,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 451213037381916,
+							"parameters": {
+								"layout": "LEVEL 4"
+							}
+						}
+					],
+					"sid": 415656146953650
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
 							"sid": 923004428176843,
 							"parameters": {
 								"object": "ExitHere2"
@@ -2465,30 +2599,6 @@
 						}
 					],
 					"sid": 787236998846092
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
-							"sid": 772713093247900,
-							"parameters": {
-								"object": "EnterHere"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 912115814010623,
-							"parameters": {
-								"layout": "LEVEL 4"
-							}
-						}
-					],
-					"sid": 498881094088613
 				},
 				{
 					"eventType": "block",

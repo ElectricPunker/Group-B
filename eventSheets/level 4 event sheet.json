@@ -477,51 +477,6 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player2",
-							"sid": 624573560417693,
-							"parameters": {
-								"object": "Door3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 135982689589407,
-							"parameters": {
-								"layout": "BOSS"
-							}
-						}
-					],
-					"sid": 326814122741825
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 438760779787487,
-							"parameters": {
-								"key": 82
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "reload",
-							"objectClass": "Browser",
-							"sid": 847001388757680
-						}
-					],
-					"sid": 319572938967735
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Player2",
 							"sid": 468448853291424,
 							"parameters": {
 								"object": "Firetrap"
@@ -954,6 +909,113 @@
 				}
 			],
 			"sid": 703753711913503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player2",
+					"sid": 137167311135312,
+					"parameters": {
+						"object": "Door3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 792744353709230,
+					"parameters": {
+						"group-name": "\"Controls5\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 941725859541697,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player2",
+					"sid": 778859466751536,
+					"parameters": {
+						"object": "Transition",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Transition",
+					"sid": 120440599181766,
+					"parameters": {
+						"x": "Player2.X",
+						"y": "Player2.Y"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Transition",
+					"sid": 464468815843805,
+					"parameters": {
+						"width": "6000",
+						"height": "6000"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Transition",
+					"sid": 194660373889604,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Transition",
+					"sid": 896386896126997,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 907097038612982,
+					"parameters": {
+						"seconds": "4"
+					}
+				}
+			],
+			"sid": 451045544923282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "Transition",
+					"sid": 248725425925910,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 850119906298824,
+					"parameters": {
+						"layout": "BOSS"
+					}
+				}
+			],
+			"sid": 774292217295933
 		}
 	],
 	"sid": 553057861477251

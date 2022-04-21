@@ -4,6 +4,40 @@
 		{
 			"eventType": "group",
 			"disabled": false,
+			"title": "LastAudio",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 464696462190834
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 340526097349762,
+							"parameters": {
+								"audio-file": "Game Over Music_3",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"YouWin\""
+							}
+						}
+					],
+					"sid": 842744248116366
+				}
+			],
+			"sid": 257917911020030
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
 			"title": "LastTransition",
 			"description": "",
 			"isActiveOnStart": true,
@@ -47,6 +81,17 @@
 							}
 						},
 						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 394422559248225,
+							"parameters": {
+								"tag": "\"YouWin\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 370542043010776,
@@ -81,28 +126,6 @@
 				}
 			],
 			"sid": 801391025164597
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "LastAudio",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 441805355925421
-						}
-					],
-					"actions": [],
-					"sid": 779714093677479
-				}
-			],
-			"sid": 151794290349441
 		}
 	],
 	"sid": 991115867636061
