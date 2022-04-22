@@ -455,6 +455,16 @@
 			"sid": 304780393418689
 		},
 		{
+			"eventType": "variable",
+			"name": "TotalTime",
+			"type": "number",
+			"initialValue": "31",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 808995661583705
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Level5",
@@ -529,6 +539,15 @@
 							"sid": 978182115757563
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 315835710961206,
+							"parameters": {
+								"variable": "TotalTime",
+								"value": "31"
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "Player2",
 							"sid": 183891421054251,
@@ -586,6 +605,15 @@
 							"parameters": {
 								"x": "Ship2.X",
 								"y": "Ship2.Y"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 696639214728994,
+							"parameters": {
+								"group-name": "\"Time\"",
+								"state": "deactivated"
 							}
 						}
 					],
@@ -652,6 +680,15 @@
 								"x": "ShipBullet.X",
 								"y": "ShipBullet.Y"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Timer",
+							"sid": 654080306735882,
+							"parameters": {
+								"x": "ShipBullet.X",
+								"y": "ShipBullet.y"
+							}
 						}
 					],
 					"sid": 556290160620941
@@ -678,6 +715,15 @@
 							"id": "set-position",
 							"objectClass": "Camera",
 							"sid": 623873779173438,
+							"parameters": {
+								"x": "lerp(Self.X, Player2.X, dt)",
+								"y": "lerp(Self.Y, Player2.Y, dt)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Timer",
+							"sid": 685300566138208,
 							"parameters": {
 								"x": "lerp(Self.X, Player2.X, dt)",
 								"y": "lerp(Self.Y, Player2.Y, dt)"
@@ -847,6 +893,23 @@
 								"volume": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Timer",
+							"sid": 915992439973464,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 902206551010210,
+							"parameters": {
+								"group-name": "\"Time\"",
+								"state": "activated"
+							}
 						}
 					],
 					"sid": 545972403743439
@@ -885,6 +948,151 @@
 				}
 			],
 			"sid": 230212943072954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Time",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 735841010681925,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 557380737111997,
+							"parameters": {
+								"variable": "TotalTime",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 199801769484277,
+							"parameters": {
+								"variable": "TotalTime",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 341604129370536,
+							"parameters": {
+								"text": "TotalTime"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Timer",
+							"sid": 300987769762592,
+							"parameters": {
+								"x": "Player2.x",
+								"y": "Player2.Y"
+							}
+						}
+					],
+					"sid": 935561000566059
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 389319186402358,
+							"parameters": {
+								"variable": "TotalTime",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Timer",
+							"sid": 218444258119384
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player2",
+							"sid": 980610814408080,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player2",
+							"sid": 859316855443913,
+							"parameters": {
+								"object": "Transition",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Transition",
+							"sid": 932160903684389,
+							"parameters": {
+								"x": "Player2.X",
+								"y": "Player2.Y"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Transition",
+							"sid": 217044291266431,
+							"parameters": {
+								"width": "6000",
+								"height": "6000"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Transition",
+							"sid": 845417781645051,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Transition",
+							"sid": 570405113184639,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 893185375805358,
+							"parameters": {
+								"seconds": "4"
+							}
+						}
+					],
+					"sid": 673381229759633
+				}
+			],
+			"sid": 938091810397590
 		},
 		{
 			"eventType": "block",
@@ -1009,9 +1217,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 850119906298824,
+					"sid": 771376831969586,
 					"parameters": {
-						"layout": "BOSS"
+						"layout": "LEVEL 4"
 					}
 				}
 			],

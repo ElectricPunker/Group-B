@@ -1,0 +1,26 @@
+{
+	"name": "Timer",
+	"plugin-id": "Spritefont2",
+	"sid": 756222586592230,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 195719234471480
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1265356,
+		"useCollisionPoly": true
+	}
+}

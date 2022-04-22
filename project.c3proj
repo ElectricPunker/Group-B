@@ -240,7 +240,9 @@
 			"NextLevel",
 			"ShieldTrtigger",
 			"Particles",
-			"GameManager"
+			"GameManager",
+			"Clock",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -348,7 +350,8 @@
 				"items": [
 					"Controlstext",
 					"PressSpacebar",
-					"Itch"
+					"Itch",
+					"Timer"
 				],
 				"subfolders": [],
 				"name": "Instructions"
