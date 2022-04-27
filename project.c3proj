@@ -243,7 +243,8 @@
 			"GameManager",
 			"Clock",
 			"Sprite",
-			"Walls2"
+			"Walls2",
+			"door2"
 		],
 		"subfolders": [
 			{
