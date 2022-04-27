@@ -1,0 +1,279 @@
+{
+	"name": "EXPLOSION EVENT SHEET",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "View",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 113160940696254
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "InsideBuilding",
+							"sid": 859991181331917,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 467735594125172,
+							"parameters": {
+								"scale": "2.0"
+							}
+						},
+						{
+							"id": "shake",
+							"objectClass": "InsideBuilding",
+							"sid": 772044431194120,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "20",
+								"duration": "3.0",
+								"mode": "reducing-magnitude"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 892996590555014,
+							"parameters": {
+								"audio-file": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"Boom\""
+							}
+						}
+					],
+					"sid": 739619218845365
+				}
+			],
+			"sid": 881785410524341
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Building",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 491429760172320
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Explosion",
+							"sid": 474547945119200,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "InsideBuilding",
+							"sid": 968639890581721,
+							"parameters": {
+								"animation": "\"Broken\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Explosion",
+							"sid": 666878570031771,
+							"parameters": {
+								"animation": "\"Destroyed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Firetrap",
+							"sid": 913725620571195,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 762379451223680
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "InsideBuilding",
+							"sid": 114157085822586,
+							"parameters": {
+								"comparison": 0,
+								"number": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Firetrap",
+							"sid": 116975567530814,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Firetrap",
+							"sid": 929251064742836,
+							"parameters": {
+								"object": "Transition",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 194679079045660
+				}
+			],
+			"sid": 715870016110445
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Transition Script",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Firetrap",
+							"sid": 971644459390009
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 354130239175510,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Transition",
+							"sid": 112582752771172,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Transition",
+							"sid": 860989800627784,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 566654743560588
+				},
+				{
+					"functionName": "Fade3",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 594192869207453,
+							"parameters": {
+								"object-to-create": "Transition",
+								"layer": "0",
+								"x": "Gametitle.X",
+								"y": "Gametitle.Y",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "Transition",
+							"sid": 533066361760001,
+							"parameters": {
+								"width": "3146",
+								"height": "1713"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Transition",
+							"sid": 883840319180926,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 401784207657691,
+							"parameters": {
+								"tag": "\"Boom\"",
+								"db": "-100",
+								"duration": "2",
+								"ending": "stop"
+							}
+						}
+					],
+					"sid": 794643715333581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "Transition",
+							"sid": 494335439036826,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 312484648641438,
+							"parameters": {
+								"layout": "LEVEL 4"
+							}
+						}
+					],
+					"sid": 418359778760199
+				}
+			],
+			"sid": 149403200354221
+		}
+	],
+	"sid": 275681206344706
+}

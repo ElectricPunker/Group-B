@@ -455,16 +455,6 @@
 			"sid": 304780393418689
 		},
 		{
-			"eventType": "variable",
-			"name": "TotalTime",
-			"type": "number",
-			"initialValue": "31",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 808995661583705
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Level5",
@@ -697,51 +687,21 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 515290873889316
-						},
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 872385974848579,
-							"parameters": {
-								"variable": "Gamestart"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Camera",
-							"sid": 623873779173438,
-							"parameters": {
-								"x": "lerp(Self.X, Player2.X, dt)",
-								"y": "lerp(Self.Y, Player2.Y, dt)"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Timer",
-							"sid": 685300566138208,
-							"parameters": {
-								"x": "lerp(Self.X, Player2.X, dt)",
-								"y": "lerp(Self.Y, Player2.Y, dt)"
-							}
-						}
-					],
-					"sid": 353220557615500
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-created",
 							"objectClass": "ShipBullet",
 							"sid": 519919841556093
 						}
 					],
 					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 810257445023557,
+							"parameters": {
+								"x": "ShipBullet.X",
+								"y": "ShipBullet.Y"
+							}
+						},
 						{
 							"id": "set-layout-scale",
 							"objectClass": "System",
@@ -753,7 +713,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 295319327466837,
+							"sid": 674628600162997,
 							"parameters": {
 								"audio-file": "cannon sound effect (128 kbps)",
 								"loop": "not-looping",
@@ -812,6 +772,45 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 215423864174698
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 468622144080361,
+							"parameters": {
+								"variable": "Gamestart"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Camera",
+							"sid": 785655097929181,
+							"parameters": {
+								"x": "lerp(Self.X, Player2.X, dt)",
+								"y": "lerp(Self.Y, Player2.Y, dt)"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Timer",
+							"sid": 730635513736564,
+							"parameters": {
+								"x": "lerp(Self.X, Player2.X, dt)",
+								"y": "lerp(Self.Y, Player2.Y, dt)"
+							}
+						}
+					],
+					"sid": 131177970181466
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-destroyed",
 							"objectClass": "ShakeTrigger",
 							"sid": 434484151768481
@@ -821,12 +820,12 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 124624274771828,
+							"sid": 513350242356459,
 							"parameters": {
 								"audio-file": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps",
 								"loop": "not-looping",
 								"volume": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"Rush\""
 							}
 						},
 						{
@@ -950,6 +949,16 @@
 			"sid": 230212943072954
 		},
 		{
+			"eventType": "variable",
+			"name": "TotalTime",
+			"type": "number",
+			"initialValue": "31",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 368151004442064
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Time",
@@ -1040,9 +1049,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "Player2",
-							"sid": 859316855443913,
+							"sid": 257411593775065,
 							"parameters": {
-								"object": "Transition",
+								"object": "Transition2",
 								"layer": "0",
 								"image-point": "0",
 								"create-hierarchy": false
@@ -1050,8 +1059,8 @@
 						},
 						{
 							"id": "set-position",
-							"objectClass": "Transition",
-							"sid": 932160903684389,
+							"objectClass": "Transition2",
+							"sid": 373635612688352,
 							"parameters": {
 								"x": "Player2.X",
 								"y": "Player2.Y"
@@ -1059,8 +1068,8 @@
 						},
 						{
 							"id": "set-size",
-							"objectClass": "Transition",
-							"sid": 217044291266431,
+							"objectClass": "Transition2",
+							"sid": 433357250144436,
 							"parameters": {
 								"width": "6000",
 								"height": "6000"
@@ -1068,14 +1077,14 @@
 						},
 						{
 							"id": "start-fade",
-							"objectClass": "Transition",
-							"sid": 845417781645051,
+							"objectClass": "Transition2",
+							"sid": 560373968036362,
 							"behaviorType": "Fade"
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Transition",
-							"sid": 570405113184639,
+							"objectClass": "Transition2",
+							"sid": 109029754004870,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -1090,6 +1099,46 @@
 						}
 					],
 					"sid": 673381229759633
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Transition2",
+							"sid": 189654469711878
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 856461420658587
+						}
+					],
+					"sid": 151714423490288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "Transition2",
+							"sid": 672978381657150,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 775345445041277,
+							"parameters": {
+								"layout": "EXPLOSION CUTSCENE"
+							}
+						}
+					],
+					"sid": 516745728716531
 				}
 			],
 			"sid": 938091810397590
@@ -1207,6 +1256,24 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "is-visible",
+					"objectClass": "Transition",
+					"sid": 503549134380174
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 982337228230886
+				}
+			],
+			"sid": 912715059251916
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-fade-in-finished",
 					"objectClass": "Transition",
 					"sid": 248725425925910,
@@ -1217,9 +1284,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 771376831969586,
+					"sid": 374766287262171,
 					"parameters": {
-						"layout": "LEVEL 4"
+						"layout": "BOSS"
 					}
 				}
 			],

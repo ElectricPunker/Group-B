@@ -1989,7 +1989,7 @@
 					}
 				},
 				{
-					"type": "Ship3Boss2",
+					"type": "Explosion",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Destroyed",

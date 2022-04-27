@@ -652,7 +652,7 @@
 							"actions": [
 								{
 									"id": "set-position",
-									"objectClass": "Ship3Boss2",
+									"objectClass": "Explosion",
 									"sid": 528920388664077,
 									"parameters": {
 										"x": "Ship3Boss.x",
@@ -661,7 +661,7 @@
 								},
 								{
 									"id": "start-animation",
-									"objectClass": "Ship3Boss2",
+									"objectClass": "Explosion",
 									"sid": 914439447674295,
 									"parameters": {
 										"from": "beginning"
@@ -669,7 +669,7 @@
 								},
 								{
 									"id": "set-visible",
-									"objectClass": "Ship3Boss2",
+									"objectClass": "Explosion",
 									"sid": 345609589026132,
 									"parameters": {
 										"visibility": "visible"
@@ -677,7 +677,7 @@
 								},
 								{
 									"id": "set-size",
-									"objectClass": "Ship3Boss2",
+									"objectClass": "Explosion",
 									"sid": 953822654072103,
 									"parameters": {
 										"width": "391.2",

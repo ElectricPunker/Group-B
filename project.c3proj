@@ -242,7 +242,8 @@
 			"Particles",
 			"GameManager",
 			"Clock",
-			"Sprite"
+			"Sprite",
+			"Walls2"
 		],
 		"subfolders": [
 			{
@@ -257,7 +258,7 @@
 					"PlayerHitBox",
 					"Ship3Boss",
 					"EnemyShield",
-					"Ship3Boss2"
+					"Explosion"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -333,7 +334,8 @@
 					"ExitHere",
 					"Transition",
 					"ExitHere2",
-					"EnterHere"
+					"EnterHere",
+					"Transition2"
 				],
 				"subfolders": [],
 				"name": "Tranistion"
@@ -400,7 +402,8 @@
 			"Game Over",
 			"LEVEL 2",
 			"LEVEL 4",
-			"TUTORIAL"
+			"TUTORIAL",
+			"EXPLOSION CUTSCENE"
 		],
 		"subfolders": []
 	},
@@ -413,7 +416,8 @@
 			"Game Over Event sheet 1",
 			"Start Event Sheet",
 			"LEVEL 4 EVENT SHEET",
-			"TUTORIAL EVENT SHEET"
+			"TUTORIAL EVENT SHEET",
+			"EXPLOSION EVENT SHEET"
 		],
 		"subfolders": []
 	},
