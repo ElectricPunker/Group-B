@@ -678,10 +678,10 @@
 								{
 									"id": "set-size",
 									"objectClass": "Explosion",
-									"sid": 953822654072103,
+									"sid": 391754313765843,
 									"parameters": {
-										"width": "391.2",
-										"height": "312.521862"
+										"width": "586.2",
+										"height": "497"
 									}
 								},
 								{
@@ -1296,6 +1296,14 @@
 					"sid": 206866921149954,
 					"parameters": {
 						"layout": "START"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 848318102117267,
+					"parameters": {
+						"tag": "\"BossSong\""
 					}
 				}
 			],

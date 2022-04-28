@@ -246,14 +246,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -895,14 +895,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -939,14 +939,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -983,14 +983,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -1027,14 +1027,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -1071,14 +1071,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -1115,14 +1115,14 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"Water": {
+						"WaterBackground": {
 							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"speed": 0.45,
+								"x-speed": 0.45,
+								"y-speed": 0.75,
+								"intensity": 5,
+								"frequency": 8,
+								"angle": 9,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -1216,12 +1216,12 @@
 						}
 					},
 					"world": {
-						"x": 522.9039592631686,
-						"y": 735.8900163238618,
+						"x": 394,
+						"y": 724,
 						"width": 123.01958736451881,
 						"height": 83.51466732492256,
-						"originX": 0.9962962962962962,
-						"originY": 0.49200000000000044,
+						"originX": 0.011111111111111112,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1313,10 +1313,10 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 10,
-								"frequency": 4,
-								"angle": 7,
+								"y-speed": 0.6,
+								"intensity": 25,
+								"frequency": 10,
+								"angle": 90,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
@@ -1325,9 +1325,9 @@
 					},
 					"world": {
 						"x": 1598,
-						"y": 366,
+						"y": 304.8,
 						"width": 53,
-						"height": 25,
+						"height": 76,
 						"originX": 0.5,
 						"originY": -0.2,
 						"color": [

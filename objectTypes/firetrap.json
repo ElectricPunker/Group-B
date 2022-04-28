@@ -7,8 +7,8 @@
 	"behaviorTypes": [],
 	"effectTypes": [
 		{
-			"effectId": "water",
-			"name": "Water"
+			"effectId": "waterbg",
+			"name": "WaterBackground"
 		}
 	],
 	"animations": {

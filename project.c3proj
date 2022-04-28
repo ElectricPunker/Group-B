@@ -216,6 +216,14 @@
 		},
 		{
 			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "effect",
 			"id": "water",
 			"name": "Water",
 			"author": "Viktor Korsun",

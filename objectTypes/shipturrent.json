@@ -24,8 +24,8 @@
 					{
 						"width": 90,
 						"height": 50,
-						"originX": 0.9962962962962962,
-						"originY": 0.49200000000000044,
+						"originX": 0.011111111111111112,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -46,8 +46,8 @@
 						"imagePoints": [
 							{
 								"name": "Barrel",
-								"x": -0.317283950617284,
-								"y": 0.38
+								"x": 1,
+								"y": 0.48
 							}
 						],
 						"duration": 1
@@ -60,203 +60,6 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 5486661,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					},
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 8241393,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					},
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 6807353,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					},
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 9645001,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					},
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 3676224,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					},
-					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 3248444,
-						"collisionPoly": {
-							"points": [
-								0,
-								1,
-								0,
-								0,
-								1,
-								0,
-								1,
-								1
-							]
-						},
-						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
-							}
-						],
-						"duration": 1
-					}
-				],
-				"sid": 335704177945836,
-				"name": "Animation 2",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 10
 			}
 		],
 		"subfolders": []
