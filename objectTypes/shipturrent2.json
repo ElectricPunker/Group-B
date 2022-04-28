@@ -27,14 +27,14 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.136,
-						"originY": 0.528,
+						"width": 90,
+						"height": 50,
+						"originX": 0.9266666666666667,
+						"originY": 0.5159999999999999,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3048594,
+						"imageSpriteId": 93018,
 						"collisionPoly": {
 							"points": [
 								0,
@@ -51,8 +51,8 @@
 						"imagePoints": [
 							{
 								"name": "Barrel",
-								"x": 1.2,
-								"y": 0.5
+								"x": -0.25555555555555554,
+								"y": 0.46
 							}
 						],
 						"duration": 1
