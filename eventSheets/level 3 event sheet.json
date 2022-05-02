@@ -1456,6 +1456,20 @@
 							"parameters": {
 								"state": "enabled"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpriteFont",
+							"sid": 100051688276117,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "SpriteFont",
+							"sid": 650550420277831,
+							"behaviorType": "Fade"
 						}
 					],
 					"sid": 956667746482337
@@ -2644,6 +2658,11 @@
 							"parameters": {
 								"layout": "START"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 369925652319474
 						}
 					],
 					"sid": 467059029279795
@@ -2835,6 +2854,14 @@
 					"behaviorType": "Fade",
 					"parameters": {
 						"wait-time": "600"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SpriteFont",
+					"sid": 668082313971047,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],

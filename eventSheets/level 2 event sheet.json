@@ -1176,6 +1176,11 @@
 							"parameters": {
 								"layout": "START"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 676810313731048
 						}
 					],
 					"sid": 257690932480083

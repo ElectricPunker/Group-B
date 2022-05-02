@@ -1299,12 +1299,9 @@
 					}
 				},
 				{
-					"id": "stop",
+					"id": "stop-all",
 					"objectClass": "Audio",
-					"sid": 848318102117267,
-					"parameters": {
-						"tag": "\"BossSong\""
-					}
+					"sid": 989764139897073
 				}
 			],
 			"sid": 895242896538817

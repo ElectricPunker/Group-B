@@ -630,6 +630,11 @@
 							"parameters": {
 								"layout": "START"
 							}
+						},
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 535247569743632
 						}
 					],
 					"sid": 913271415130037
@@ -690,8 +695,8 @@
 					"actions": [
 						{
 							"id": "start-fade",
-							"objectClass": "Story",
-							"sid": 626899292213775,
+							"objectClass": "SpriteFont",
+							"sid": 336447861128428,
 							"behaviorType": "Fade"
 						},
 						{

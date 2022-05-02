@@ -9,6 +9,11 @@
 			"behaviorId": "Flash",
 			"name": "Flash",
 			"sid": 805118694991789
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 104357166883042
 		}
 	],
 	"effectTypes": [

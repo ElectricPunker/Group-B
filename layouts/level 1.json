@@ -808,6 +808,16 @@
 					"behaviors": {
 						"Flash": {
 							"properties": {}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"effects": {
@@ -922,8 +932,8 @@
 					"behaviors": {
 						"Fade": {
 							"properties": {
-								"fade-in-time": 2,
-								"wait-time": 10,
+								"fade-in-time": 1,
+								"wait-time": 3,
 								"fade-out-time": 1,
 								"destroy": true,
 								"enabled": true,
@@ -932,8 +942,8 @@
 						}
 					},
 					"world": {
-						"x": 951.7314234256328,
-						"y": 240.8056431846535,
+						"x": 874,
+						"y": 78,
 						"width": 393,
 						"height": 129,
 						"originX": 0.5091743119266054,
@@ -944,69 +954,7 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Story",
-					"properties": {
-						"text": "YOU WILL PAY FOR THE CRIMES THAT YOU COMMITTED ASSHOLE!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 16.7,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 106,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 2,
-								"wait-time": 10,
-								"fade-out-time": 1,
-								"destroy": false,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"WarpRipple": {
-							"parameters": {
-								"frequency": 1,
-								"amplitude": 0.03,
-								"speed": -2
-							}
-						}
-					},
-					"world": {
-						"x": 749.1138952252376,
-						"y": 212.00017298917757,
-						"width": 401.7412181833796,
-						"height": 108.12704107431651,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
+						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
 				},
@@ -1069,6 +1017,55 @@
 							1,
 							1,
 							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": "YOU WILL PAY FOR THE CRIMES THAT YOU COMMITTED ASSHOLE!",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 229,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 3,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 709,
+						"y": 45,
+						"width": 339,
+						"height": 74,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0,
+							0,
+							0,
 							1
 						],
 						"angle": 0,

@@ -370,7 +370,8 @@
 			{
 				"items": [
 					"Story",
-					"Bubble"
+					"Bubble",
+					"SpriteFont"
 				],
 				"subfolders": [],
 				"name": "Dialogue"

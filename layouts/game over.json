@@ -75,6 +75,16 @@
 					"behaviors": {
 						"Flash": {
 							"properties": {}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 600,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"effects": {

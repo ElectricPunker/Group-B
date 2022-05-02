@@ -36,6 +36,14 @@
 					"parameters": {
 						"wait-time": "600"
 					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 464400420908132,
+					"parameters": {
+						"cursor-style": "none"
+					}
 				}
 			],
 			"sid": 858701898279233

@@ -669,6 +669,11 @@
 									"id": "destroy",
 									"objectClass": "Enemy1",
 									"sid": 639100135583887
+								},
+								{
+									"id": "destroy",
+									"objectClass": "PlayerBullet",
+									"sid": 694749703164764
 								}
 							],
 							"sid": 559533390825560
