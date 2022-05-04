@@ -253,7 +253,8 @@
 			"Sprite",
 			"Walls2",
 			"door2",
-			"BadCollision"
+			"BadCollision",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
@@ -469,6 +470,22 @@
 					"name": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 620935225938839,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Item Pick up (Counter Strike Source) - Sound Effect for editing (128 kbps).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 899987498379744,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Window glass breaking sound effect (128 kbps).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 113386746801423,
 					"file-info": {
 						"purpose": "none"
 					}

@@ -148,6 +148,26 @@
 					"id": "destroy",
 					"objectClass": "Gun",
 					"sid": 619624300507887
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 702487777330951,
+					"parameters": {
+						"audio-file": "Item Pick up (Counter Strike Source) - Sound Effect for editing (128 kbps)",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"Select\""
+					}
+				},
+				{
+					"id": "set-playback-rate",
+					"objectClass": "Audio",
+					"sid": 741944303029091,
+					"parameters": {
+						"tag": "\"Select\"",
+						"playback-rate": "2.0"
+					}
 				}
 			],
 			"sid": 469244359809065
@@ -680,7 +700,43 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Player2",
-									"sid": 898915642909820,
+									"sid": 816483148785955,
+									"parameters": {
+										"object": "Sprite2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 259624811802326,
+									"parameters": {
+										"audio-file": "Window glass breaking sound effect (128 kbps)",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"Break\""
+									}
+								},
+								{
+									"id": "set-playback-rate",
+									"objectClass": "Audio",
+									"sid": 614314602937665,
+									"parameters": {
+										"tag": "\"Break\"",
+										"playback-rate": "1.7"
+									}
+								}
+							],
+							"sid": 541257091150147
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player2",
+									"sid": 730748929810881,
 									"parameters": {
 										"object": "Window2"
 									}
@@ -690,15 +746,15 @@
 								{
 									"id": "destroy",
 									"objectClass": "Window2",
-									"sid": 746299718161112
+									"sid": 825262761981273
 								},
 								{
 									"id": "destroy",
 									"objectClass": "Player2",
-									"sid": 313873003851196
+									"sid": 410781456663858
 								}
 							],
-							"sid": 541257091150147
+							"sid": 191836072535248
 						},
 						{
 							"eventType": "block",
