@@ -57,8 +57,8 @@
 					"actions": [
 						{
 							"id": "flash",
-							"objectClass": "Controlstext",
-							"sid": 407213332519531,
+							"objectClass": "SpriteFont2",
+							"sid": 454585260829950,
 							"behaviorType": "Flash",
 							"parameters": {
 								"on-time": "0.1",

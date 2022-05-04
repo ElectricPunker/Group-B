@@ -49,33 +49,26 @@
 					}
 				},
 				{
-					"type": "Controlstext",
+					"type": "SpriteFont2",
 					"properties": {
-						"text": "           YOU ESCAPED! \n      PRESS \"R\" PLAY AGAIN!",
+						"text": "YOU ESCAPED! PRESS \"R\" TO PLAY AGAIN!",
 						"enable-bbcode": true,
-						"font": "Snap ITC",
-						"size": 100,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 10,
+						"character-spacing": 0,
 						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.5058823529411764,
-							0.996078431372549,
-							0.44313725490196076,
-							1
-						],
 						"horizontal-alignment": "left",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 97,
+					"uid": 107,
 					"instanceVariables": {},
 					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
 						"Fade": {
 							"properties": {
 								"fade-in-time": 1,
@@ -85,6 +78,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"effects": {
@@ -93,16 +89,73 @@
 						}
 					},
 					"world": {
-						"x": -317,
-						"y": 562,
-						"width": 2450,
-						"height": 792,
+						"x": 140,
+						"y": 288,
+						"width": 1995,
+						"height": 836,
 						"originX": 0,
 						"originY": 0,
 						"color": [
+							0.30196078431372547,
 							1,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont2",
+					"properties": {
+						"text": "RAHEEM ALLEN-CODING\n\nYASMINE BENJAMINE-ART DESIGNER\n\nKHYREE BROOKINS-MUSIC COMPOSER\n\nCYNCIERE AMONS & EMMANUEL GAMMONS-LEVEL DESIGNER",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 3,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 97,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 600,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"effects": {
+						"Difference": {
+							"parameters": {}
+						}
+					},
+					"world": {
+						"x": 210,
+						"y": 819,
+						"width": 1798,
+						"height": 603,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.30196078431372547,
 							1,
-							1,
+							0,
 							1
 						],
 						"angle": 0,
@@ -133,8 +186,8 @@
 						}
 					},
 					"world": {
-						"x": 934,
-						"y": 804,
+						"x": 1021,
+						"y": 736,
 						"width": 3146,
 						"height": 1713,
 						"originX": 0.5,
