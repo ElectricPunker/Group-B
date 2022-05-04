@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 28503,
+	"savedWithRelease": 29302,
 	"name": "Group B Game",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -43,7 +43,7 @@
 			"id": "Spritefont2",
 			"name": "Sprite font",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -51,7 +51,7 @@
 			"id": "gamepad",
 			"name": "Gamepad",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +59,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Browser",
 			"name": "Browser",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Particles",
 			"name": "Particles",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -107,7 +107,7 @@
 			"id": "destroy",
 			"name": "Destroy outside layout",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -115,7 +115,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -123,7 +123,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -131,7 +131,7 @@
 			"id": "wrap",
 			"name": "Wrap",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -139,7 +139,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -147,7 +147,7 @@
 			"id": "custom",
 			"name": "Custom",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -155,7 +155,7 @@
 			"id": "Flash",
 			"name": "Flash",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -163,7 +163,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -171,7 +171,7 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -179,7 +179,7 @@
 			"id": "Turret",
 			"name": "Turret",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -187,7 +187,7 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -195,7 +195,7 @@
 			"id": "warpripple",
 			"name": "Warp ripple",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -203,7 +203,7 @@
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
 			"author": "Scirra",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -211,15 +211,7 @@
 			"id": "difference",
 			"name": "Difference",
 			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "waterbg",
-			"name": "Water background",
-			"author": "Viktor Korsun",
-			"version": "r285.3",
+			"version": "r293.2",
 			"bundled": false
 		},
 		{
@@ -227,7 +219,15 @@
 			"id": "water",
 			"name": "Water",
 			"author": "Viktor Korsun",
-			"version": "r285.3",
+			"version": "r293.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialblur",
+			"name": "Radial blur",
+			"author": "Scirra",
+			"version": "r293.2",
 			"bundled": false
 		}
 	],
@@ -441,22 +441,34 @@
 				{
 					"name": "cannon sound effect (128 kbps).webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 765524626023640
+					"sid": 765524626023640,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "laser shot sound effect.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 457319626526703
+					"sid": 457319626526703,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "realistic gunshot sound effect (128 kbps).webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 953151729976422
+					"sid": 953151729976422,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "Big_Explosion_Effect_Video_Mp4_HD_Sound_128_kbps.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 620935225938839
+					"sid": 620935225938839,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -466,27 +478,42 @@
 				{
 					"name": "FREE_The_Weeknd_x_Synthwave_80s_Type_Beat_-_SPEEDWAY_128_kbps.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 685255626274024
+					"sid": 685255626274024,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "strong_wind_sound_effect_128_kbps.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 571958872950970
+					"sid": 571958872950970,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "Boss Level music_2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 740300027679174
+					"sid": 740300027679174,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "Synthwave Fire level_1.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 359988454856011
+					"sid": 359988454856011,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "Game Over Music_3.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 590752283653586
+					"sid": 590752283653586,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []

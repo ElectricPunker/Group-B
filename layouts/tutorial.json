@@ -475,7 +475,7 @@
 				{
 					"type": "Itch",
 					"properties": {
-						"text": "*To restart the Game, press 'R' anytime.",
+						"text": "*To restart the Game, hold down the 'R' key for 3 seconds",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 16,
@@ -500,7 +500,7 @@
 					"world": {
 						"x": 19,
 						"y": 101,
-						"width": 281,
+						"width": 329,
 						"height": 63,
 						"originX": 0,
 						"originY": 0,

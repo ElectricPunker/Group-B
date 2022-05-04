@@ -217,7 +217,8 @@
 								"layer": "0",
 								"x": "Gametitle.X",
 								"y": "Gametitle.Y",
-								"create-hierarchy": false
+								"create-hierarchy": false,
+								"template-name": "\"\""
 							}
 						},
 						{

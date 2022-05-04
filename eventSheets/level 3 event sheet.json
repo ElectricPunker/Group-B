@@ -2642,35 +2642,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 609794888241674,
-							"parameters": {
-								"key": 82
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
-							"sid": 987895233058667,
-							"parameters": {
-								"layout": "START"
-							}
-						},
-						{
-							"id": "stop-all",
-							"objectClass": "Audio",
-							"sid": 369925652319474
-						}
-					],
-					"sid": 467059029279795
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-created",
 							"objectClass": "Story",
 							"sid": 751588880330492
@@ -2866,6 +2837,143 @@
 				}
 			],
 			"sid": 906702372418493
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Reset6",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 710483300997198
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 653234607511929,
+							"parameters": {
+								"group-name": "\"Full Reset\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 110306656020593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 730658692953899,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 589029876614421,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 654417461940065,
+							"parameters": {
+								"group-name": "\"Full Reset\"",
+								"state": "activated"
+							}
+						}
+					],
+					"sid": 312150447272495
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-released",
+							"objectClass": "Keyboard",
+							"sid": 359393465538776,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-group-active",
+							"objectClass": "System",
+							"sid": 705117325201157,
+							"parameters": {
+								"group-name": "\"Full Reset\"",
+								"state": "deactivated"
+							}
+						}
+					],
+					"sid": 611095755558847
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Full Reset6",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 221285196745862,
+									"parameters": {
+										"key": 82
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 965211795568082,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 992087570131940,
+									"parameters": {
+										"layout": "START"
+									}
+								},
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 254122642967972
+								}
+							],
+							"sid": 329550579060513
+						}
+					],
+					"sid": 711914701532917
+				}
+			],
+			"sid": 516926630003331
 		}
 	],
 	"sid": 390431601616824

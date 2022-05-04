@@ -853,20 +853,26 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.6,
-								"intensity": 25,
+								"y-speed": 0.3,
+								"intensity": 3,
 								"frequency": 4,
-								"angle": 90,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
 							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
+							}
 						}
 					},
 					"world": {
-						"x": 955,
+						"x": 956.7414594630305,
 						"y": 713,
-						"width": 288,
+						"width": 347.21050750863594,
 						"height": 117,
 						"originX": 0.5,
 						"originY": -0.2,
@@ -897,21 +903,27 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.6,
-								"intensity": 25,
+								"y-speed": 0.3,
+								"intensity": 3,
 								"frequency": 4,
-								"angle": 90,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
 							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
+							}
 						}
 					},
 					"world": {
-						"x": 182,
-						"y": 271,
-						"width": 147,
-						"height": 117,
+						"x": 173.94449573050792,
+						"y": 175.8016799425792,
+						"width": 202.5847097369282,
+						"height": 223.831933381184,
 						"originX": 0.5,
 						"originY": -0.2,
 						"color": [
@@ -941,13 +953,19 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.6,
-								"intensity": 25,
+								"y-speed": 0.3,
+								"intensity": 3,
 								"frequency": 4,
-								"angle": 90,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
 							}
 						}
 					},
@@ -985,21 +1003,27 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.6,
-								"intensity": 25,
+								"y-speed": 0.3,
+								"intensity": 3,
 								"frequency": 4,
-								"angle": 90,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
 							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
+							}
 						}
 					},
 					"world": {
-						"x": 459.765474259689,
-						"y": 408.9722487616476,
-						"width": 111.24400983371049,
-						"height": 129.54978991837874,
+						"x": 458.5686001436946,
+						"y": 367.87319425586463,
+						"width": 108.85026160172168,
+						"height": 163.79900200653123,
 						"originX": 0.5,
 						"originY": -0.2,
 						"color": [
@@ -1025,7 +1049,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
@@ -1037,11 +1061,17 @@
 								"reflectivity": 400,
 								"emboss": 0.3
 							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
+							}
 						}
 					},
 					"world": {
 						"x": -35.29670862120196,
-						"y": -125.33909392691714,
+						"y": -57.339093926917144,
 						"width": 300.3318680372977,
 						"height": 379.0373586055454,
 						"originX": 0.5,
@@ -2045,10 +2075,10 @@
 						}
 					},
 					"world": {
-						"x": 1089,
-						"y": 790,
+						"x": 1176,
+						"y": 852,
 						"width": 3146,
-						"height": 1713,
+						"height": 1899,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

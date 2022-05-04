@@ -7,8 +7,12 @@
 	"behaviorTypes": [],
 	"effectTypes": [
 		{
-			"effectId": "waterbg",
-			"name": "WaterBackground"
+			"effectId": "water",
+			"name": "Water"
+		},
+		{
+			"effectId": "radialblur",
+			"name": "RadialBlur"
 		}
 	],
 	"animations": {
@@ -23,7 +27,31 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 915613,
+						"imageSpriteId": 2733779,
+						"collisionPoly": {
+							"points": [
+								0.0014348287088925933,
+								0.23631962531672054,
+								1,
+								0.20489643477675226,
+								0.996031746031746,
+								0.9904761904761905,
+								0.003968253968253968,
+								0.9904761904761905
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 252,
+						"height": 105,
+						"originX": 0.5,
+						"originY": -0.2,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4891339,
 						"collisionPoly": {
 							"points": [
 								0.006725854183481301,
@@ -42,11 +70,11 @@
 				],
 				"sid": 986727944132294,
 				"name": "Animation 1",
-				"isLooping": false,
+				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 8
 			}
 		],
 		"subfolders": []

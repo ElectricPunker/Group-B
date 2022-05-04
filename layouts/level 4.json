@@ -7,6 +7,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "ShakeTrigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 130,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1284,
+						"y": 710,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Floor1",
 					"properties": {
 						"initially-visible": true,
@@ -246,17 +275,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -358,42 +393,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 86,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1552,
-						"y": 1127,
-						"width": 180.0623686451802,
-						"height": 34.84864205219287,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Floor1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 87,
 					"instanceVariables": {},
 					"behaviors": {
@@ -444,42 +443,6 @@
 						"x": 1560,
 						"y": 895,
 						"width": 208.0623686451802,
-						"height": 43.84864205219287,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Floor1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 89,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1303,
-						"y": 789,
-						"width": 148.0623686451802,
 						"height": 43.84864205219287,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -588,78 +551,6 @@
 						"x": 1670,
 						"y": 527,
 						"width": 56.062368645180186,
-						"height": 43.84864205219287,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Floor1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 95,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1856,
-						"y": 611,
-						"width": 208.0623686451802,
-						"height": 43.84864205219287,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Floor1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 96,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1330,
-						"y": 185,
-						"width": 208.0623686451802,
 						"height": 43.84864205219287,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -895,17 +786,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -939,17 +836,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -983,17 +886,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.05,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -1027,17 +936,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -1071,17 +986,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -1115,17 +1036,23 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
-								"speed": 0.45,
-								"x-speed": 0.45,
-								"y-speed": 0.75,
-								"intensity": 5,
-								"frequency": 8,
-								"angle": 9,
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.2,
+								"intensity": 1
 							}
 						}
 					},
@@ -1233,35 +1160,6 @@
 					}
 				},
 				{
-					"type": "ShakeTrigger",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 130,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1284,
-						"y": 710,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Camera",
 					"properties": {
 						"initially-visible": false,
@@ -1313,13 +1211,19 @@
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
-								"y-speed": 0.6,
-								"intensity": 25,
-								"frequency": 10,
-								"angle": 90,
+								"y-speed": 0.3,
+								"intensity": 3,
+								"frequency": 4,
+								"angle": 7,
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.25,
+								"intensity": 1
 							}
 						}
 					},
@@ -1405,84 +1309,6 @@
 					}
 				},
 				{
-					"type": "Timer",
-					"properties": {
-						"text": "30",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 2,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 220,
-					"instanceVariables": {},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 1229,
-						"y": 1189,
-						"width": 152.34374034505595,
-						"height": 52.43079414636418,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							0.13725490196078433,
-							0.5450980392156862,
-							0.23921568627450981,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Floor1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 225,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1202.5,
-						"y": 785,
-						"width": 1612.0623686451802,
-						"height": 50.84864205219287,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Floor1",
 					"properties": {
 						"initially-visible": true,
@@ -1546,6 +1372,228 @@
 						"y": -947,
 						"width": 3146,
 						"height": 1713,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Floor1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 225,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1202.5,
+						"y": 785,
+						"width": 1612.0623686451802,
+						"height": 50.84864205219287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Floor1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 95,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1856,
+						"y": 611,
+						"width": 208.0623686451802,
+						"height": 43.84864205219287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Floor1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 86,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1552,
+						"y": 1127,
+						"width": 180.0623686451802,
+						"height": 34.84864205219287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Floor1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 89,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1303,
+						"y": 789,
+						"width": 148.0623686451802,
+						"height": 43.84864205219287,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Timer",
+					"properties": {
+						"text": "30",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 2,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 220,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 1229,
+						"y": 1189,
+						"width": 152.34374034505595,
+						"height": 52.43079414636418,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.13725490196078433,
+							0.5450980392156862,
+							0.23921568627450981,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Floor1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 96,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1330,
+						"y": 185,
+						"width": 208.0623686451802,
+						"height": 43.84864205219287,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

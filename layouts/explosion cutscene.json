@@ -156,7 +156,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
-						"WaterBackground": {
+						"Water": {
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
@@ -167,6 +167,12 @@
 								"delta": 20,
 								"reflectivity": 400,
 								"emboss": 0.3
+							}
+						},
+						"RadialBlur": {
+							"parameters": {
+								"radius": 0.4,
+								"intensity": 1
 							}
 						}
 					},
