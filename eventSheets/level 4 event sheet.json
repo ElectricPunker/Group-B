@@ -720,6 +720,17 @@
 								"volume": "0",
 								"tag-optional": "\"\""
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 692006682009668,
+							"parameters": {
+								"audio-file": "intense-cyberpunk-fight-music-kill-crew-royalty-free-synthwave-industrial-m_mv0o1onc",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 645863885994806
@@ -880,17 +891,6 @@
 							"parameters": {
 								"group-name": "\"Player5\"",
 								"state": "activated"
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 292327198233967,
-							"parameters": {
-								"audio-file": "Synthwave Fire level_1",
-								"loop": "not-looping",
-								"volume": "0",
-								"tag-optional": "\"\""
 							}
 						},
 						{
