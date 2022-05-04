@@ -1,0 +1,36 @@
+{
+	"name": "SpriteFont2",
+	"plugin-id": "Spritefont2",
+	"sid": 576823067137099,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 212852071931641
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 141619083535153
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "difference",
+			"name": "Difference"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7106329,
+		"useCollisionPoly": true
+	}
+}
