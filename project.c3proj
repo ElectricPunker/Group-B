@@ -373,7 +373,8 @@
 					"Story",
 					"Bubble",
 					"SpriteFont",
-					"SpriteFont2"
+					"SpriteFont2",
+					"SpriteFont3"
 				],
 				"subfolders": [],
 				"name": "Dialogue"

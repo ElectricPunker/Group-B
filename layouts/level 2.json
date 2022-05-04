@@ -577,68 +577,6 @@
 					}
 				},
 				{
-					"type": "Story",
-					"properties": {
-						"text": "YOU WILL NOT MAKE IT TO YOUR TIMELINE!!!\nPREPARE TO DIE!!!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 30,
-						"line-height": 0,
-						"bold": true,
-						"italic": true,
-						"color": [
-							0.47843137254901963,
-							0.6549019607843137,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 102,
-					"instanceVariables": {},
-					"behaviors": {
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"WarpRipple": {
-							"parameters": {
-								"frequency": 1,
-								"amplitude": 0.03,
-								"speed": -2
-							}
-						}
-					},
-					"world": {
-						"x": 804,
-						"y": 165,
-						"width": 912.1475178035132,
-						"height": 142.41326133042284,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "ExitHere2",
 					"properties": {
 						"text": "Exit Here!",
