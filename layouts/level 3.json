@@ -664,6 +664,12 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -894,6 +900,12 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -980,6 +992,12 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -989,67 +1007,6 @@
 						"height": 92.376818,
 						"originX": 0.4375,
 						"originY": 0.5253456221198156,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Controlstext",
-					"properties": {
-						"text": "Press F to fire your gun!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 20,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.5058823529411764,
-							0.996078431372549,
-							0.44313725490196076,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 51,
-					"instanceVariables": {},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 0,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"effects": {
-						"Difference": {
-							"parameters": {}
-						}
-					},
-					"world": {
-						"x": 93,
-						"y": 121,
-						"width": 309,
-						"height": 68,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,

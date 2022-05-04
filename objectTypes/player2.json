@@ -698,6 +698,113 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 11
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1983301,
+						"collisionPoly": {
+							"points": [
+								0.4050535174113956,
+								0,
+								0.5763513957698163,
+								0,
+								0.5737559769793247,
+								1,
+								0.41910266411013797,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9380322,
+						"collisionPoly": {
+							"points": [
+								0.4050535174113956,
+								0,
+								0.5763513957698163,
+								0,
+								0.5737559769793247,
+								1,
+								0.41910266411013797,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6644552,
+						"collisionPoly": {
+							"points": [
+								0.580897335889862,
+								1,
+								0.4262440230206753,
+								1,
+								0.4236486042301837,
+								0,
+								0.5949464825886044,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 100,
+						"height": 205,
+						"originX": 0.29000000000000004,
+						"originY": 0.6,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5775619,
+						"collisionPoly": {
+							"points": [
+								0.49224333972465506,
+								1,
+								0.10561005755168817,
+								1,
+								0.09912151057545915,
+								0,
+								0.527366206471511,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 263818300005383,
+				"name": "Arrested",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
 			}
 		],
 		"subfolders": []

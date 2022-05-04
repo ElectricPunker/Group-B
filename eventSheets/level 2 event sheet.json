@@ -21,9 +21,145 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 614308799628156,
+							"parameters": {
+								"object": "Enemyturrent"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player2",
+							"sid": 277620412773031
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 383105208367757,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 889580147509337
+						}
+					],
+					"sid": 539940751153617
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 618484023174524,
+							"parameters": {
+								"object": "Enemy2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player2",
+							"sid": 431604417493067
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 335620502365140,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 781882650268325
+						}
+					],
+					"sid": 870153470420988
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 829826089755996,
+							"parameters": {
+								"object": "Enemy3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player2",
+							"sid": 593124604950160
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 956486167262855,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 475344238464718
+						}
+					],
+					"sid": 822746826304890
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 731341640369579,
+							"parameters": {
+								"object": "EnemyShield"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player2",
+							"sid": 974043038902052
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 168065637702183,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 746901871061267
+						}
+					],
+					"sid": 365623569680220
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "is-animation-playing",
 							"objectClass": "Player2",
-							"sid": 778765001045563,
+							"sid": 611914634421114,
 							"parameters": {
 								"animation": "\"Shot\""
 							},
@@ -32,7 +168,7 @@
 						{
 							"id": "is-boolean-instance-variable-set",
 							"objectClass": "Player2",
-							"sid": 926761847407828,
+							"sid": 374209043317697,
 							"parameters": {
 								"instance-variable": "Dying"
 							}
@@ -42,7 +178,7 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Player2",
-							"sid": 861050535591894,
+							"sid": 989380214991359,
 							"parameters": {
 								"animation": "\"Shot\"",
 								"from": "beginning"
@@ -51,7 +187,7 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 375529315789890,
+							"sid": 416812662969934,
 							"parameters": {
 								"seconds": "1.0"
 							}
@@ -59,10 +195,10 @@
 						{
 							"id": "restart-layout",
 							"objectClass": "System",
-							"sid": 203277443870907
+							"sid": 852262751630478
 						}
 					],
-					"sid": 481550944315356
+					"sid": 894318629188683
 				},
 				{
 					"eventType": "block",

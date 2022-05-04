@@ -519,10 +519,10 @@
 						{
 							"id": "set-rate-of-fire",
 							"objectClass": "ShipTurrent",
-							"sid": 707811729450518,
+							"sid": 230269214324763,
 							"behaviorType": "Turret",
 							"parameters": {
-								"rate-of-fire": "0.7"
+								"rate-of-fire": "0.9"
 							}
 						}
 					],

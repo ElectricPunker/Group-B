@@ -237,6 +237,12 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -357,6 +363,12 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -442,6 +454,12 @@
 								"range": 600,
 								"cone-of-view": 360,
 								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},

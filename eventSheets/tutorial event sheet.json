@@ -586,32 +586,6 @@
 								}
 							],
 							"sid": 380210584775993
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-destroyed",
-									"objectClass": "Player2",
-									"sid": 583454587699439
-								}
-							],
-							"actions": [
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 132259290903263,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 860488144071964
-								}
-							],
-							"sid": 346937703698690
 						}
 					],
 					"sid": 557575249210354
@@ -623,30 +597,6 @@
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player2",
-									"sid": 265353031677124,
-									"parameters": {
-										"object": "Window2"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "go-to-layout",
-									"objectClass": "System",
-									"sid": 996255484716390,
-									"parameters": {
-										"layout": "LEVEL 1"
-									}
-								}
-							],
-							"sid": 776382733777132
-						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -723,6 +673,141 @@
 								}
 							],
 							"sid": 441077822250841
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player2",
+									"sid": 898915642909820,
+									"parameters": {
+										"object": "Window2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Window2",
+									"sid": 746299718161112
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Player2",
+									"sid": 313873003851196
+								}
+							],
+							"sid": 541257091150147
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "Window2",
+									"sid": 628538301707629
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 715876183309243,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Transition",
+									"sid": 107925170337096,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Transition",
+									"sid": 280697049205436,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 235289412565353
+						},
+						{
+							"functionName": "Fade4",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 967601597458776,
+									"parameters": {
+										"object-to-create": "Transition",
+										"layer": "0",
+										"x": "Gametitle.X",
+										"y": "Gametitle.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Transition",
+									"sid": 897789980067871,
+									"parameters": {
+										"width": "3146",
+										"height": "1713"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Transition",
+									"sid": 536882951744705,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 641562128523023,
+									"parameters": {
+										"tag": "\"Boom\"",
+										"db": "-100",
+										"duration": "2",
+										"ending": "stop"
+									}
+								}
+							],
+							"sid": 882107701210947
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-fade-in-finished",
+									"objectClass": "Transition",
+									"sid": 141448799149699,
+									"behaviorType": "Fade"
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 677653478787789,
+									"parameters": {
+										"layout": "LEVEL 1"
+									}
+								}
+							],
+							"sid": 881964815211724
 						}
 					],
 					"sid": 435352689352382
